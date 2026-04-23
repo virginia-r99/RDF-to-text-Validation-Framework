@@ -1,0 +1,2 @@
+model_name,lang,split,n,rougeL_f1,meteor,chrfpp,bertscore_precision,bertscore_recall,bertscore_f1,bert_cosine,e5_cosine,expansion_ratio,expansion_abs_distance_from_1
+Qwen/Qwen3-4B-Instruct-2507,ca,test,700,0.6267823589047024,0.5792396436664023,0.6334530300909703,0.887097847206252,0.8962382281678064,0.8914078694581985,0.8918946965251651,0.930348715356418,1.0161337440341969,0.08415556555464904
