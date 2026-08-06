@@ -1,0 +1,48 @@
+{
+  "metric_core_compatibility": "audit-text-aligned-2.7",
+  "metric_core_sha256": "d41a631b7be3fba492dfd90317ca7a96d9a24ed93dd52478b7243ed36746004c",
+  "language_training_max": 6000,
+  "language_detector": {
+    "grouped_holdout_accuracy": 0.9971988795518207,
+    "training_examples": 14430,
+    "holdout_examples": 3570,
+    "max_per_language": 6000,
+    "entity_masking": false,
+    "code_switch_definition": "English probability >= 0.70 in at least 25% of 10-token/8-stride windows"
+  },
+  "entity_masking": false,
+  "qa31_shared_metric_core": true,
+  "qa32_shared_metric_core": true,
+  "qa31_evaluation_unit": "aligned RDF-to-text instance: RDF entry, lexicalisation ID, and target language",
+  "qa32_evaluation_unit": "aligned target lexicalisation a with aligned English lexicalisation a and a different English lexicalisation b from the same RDF entry",
+  "qa32_tokenisation": "whitespace tokens after normalize_space",
+  "qa32_comparison_selection": "first eligible different English LID after deterministic sorting",
+  "qa32_advantage_defined_only_for_nonempty_same_entry_a_not_equal_b": true,
+  "whole_text_language_confidence": 0.7,
+  "code_switch_english_probability": 0.7,
+  "code_switch_window_rate": 0.25,
+  "window_size": 10,
+  "window_stride": 8,
+  "minimum_window_tokens": 6,
+  "semantic_backend": "sentence_transformer",
+  "semantic_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "qa3_core_metrics": [
+    "target_language_probability",
+    "valid_target_language",
+    "wrong_language_detected",
+    "full_english_copy_detected",
+    "code_switch_detected",
+    "expansion_ratio",
+    "aligned_reference_advantage"
+  ],
+  "moved_to_qa1": [
+    "target_rdf_well_formed"
+  ],
+  "moved_to_qa2": [
+    "structured_predicate_retention"
+  ],
+  "removed_from_core_audit": [
+    "cross_lingual_character_overlap"
+  ],
+  "lexicalisations": 90062
+}

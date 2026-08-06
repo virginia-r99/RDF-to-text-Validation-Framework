@@ -1,0 +1,6 @@
+language,language_label,component_type,source_normalized,source_example,minimum_occurrences,occurrences,target_form_count,dominant_target_form,dominant_target_count,dominant_mapping_rate,mapping_review_signal,target_forms
+es,Spanish,entity_or_value,squid,Squid,2,7,2,calamar,6,0.8571428571428571,True,"{""calamar"": 6, ""teuthida"": 1}"
+es,Spanish,entity_or_value,central denmark region,Central_Denmark_Region,2,20,2,jutlandia central,19,0.95,True,"{""dinamarca central"": 1, ""jutlandia central"": 19}"
+es,Spanish,entity_or_value,tomato,Tomato,2,42,2,tomate,40,0.9523809523809523,True,"{""solanum lycopersicum"": 2, ""tomate"": 40}"
+es,Spanish,entity_or_value,almond,Almond,2,52,2,almendra,51,0.9807692307692307,True,"{""almendra"": 51, ""prunus amygdalus"": 1}"
+es,Spanish,entity_or_value,rhythm and blues,Rhythm_and_blues,2,258,2,rhythm and blues,256,0.9922480620155039,True,"{""rhythm and blues"": 256, ""ritmo y blues"": 2}"

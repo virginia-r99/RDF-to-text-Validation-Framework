@@ -1,0 +1,5 @@
+﻿subqa,language_label,total_cases,usable_cases,cannot_judge,exact_agreement,within_one_level,mean_absolute_level_difference,priority_precision,priority_recall,priority_f1,automatic_low_confirmation,tp,fp,fn,tn
+QA1.1,Catalan,10,10,0,1.0,1.0,0.0,,,,1.0,0,0,0,10
+QA1.1,Spanish,10,10,0,1.0,1.0,0.0,,,,1.0,0,0,0,10
+QA1.2,Catalan,10,10,0,1.0,1.0,0.0,,,,1.0,0,0,0,10
+QA1.2,Spanish,10,10,0,0.8,1.0,0.2,1.0,1.0,1.0,1.0,5,0,0,5

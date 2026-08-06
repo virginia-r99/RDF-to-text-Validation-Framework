@@ -1,0 +1,34 @@
+{
+  "metric_core_compatibility": "audit-text-aligned-2.3",
+  "metric_core_sha256": "01f3f23fa4f051b90b874018e9f4911a0152dd1c9160b65dc437fcc7866b5a9d",
+  "qa11_metric_core_sha256": "078dd7453ce1ad03a147aa3d3ca6b1a1ddd0bc1b71a30d70cba179bdf375d6ad",
+  "source_rdf": "modifiedtripleset/mtriple",
+  "qa11_evaluation_unit": "RDF entry and target language",
+  "qa11_entry_language_rows": 33306,
+  "lexicalisation_level_rows": 90062,
+  "aligned_lexicalisations": 90062,
+  "record_integrity_components": [
+    "target_triple_parity",
+    "target_text_present",
+    "lexicalisation_id_alignment",
+    "lexicalisation_id_unique",
+    "target_rdf_well_formed"
+  ],
+  "source_parity_role": "preprocessing sanity only",
+  "expected_triple_count_rule": "declared entry size; English modified-triple count when the declared value is missing or malformed",
+  "qa12_evaluation_unit": "target language, reported component class, and recurring normalized English component",
+  "qa12_mapping_alignment": "structurally aligned English and target triple sets; triples aligned by position and components by role",
+  "qa12_component_classes": [
+    "entity_or_value",
+    "predicate"
+  ],
+  "qa12_mapping_observations": 293070,
+  "qa12_recurring_profiles": 7710,
+  "qa12_metrics": [
+    "dominant_mapping_rate",
+    "weighted_dominant_mapping_rate",
+    "mapping_review_signal"
+  ],
+  "qa12_shared_metric_core": true,
+  "minimum_recurring_occurrences": 2
+}

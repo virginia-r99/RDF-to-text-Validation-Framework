@@ -1,0 +1,619 @@
+﻿case_id,subqa,language,language_label,category,record_or_component,english_triples,target_triples,aligned_english_text,target_text,comparison_or_context,automatic_risk,automatic_basis,automatic_signals
+QA11-CA-44de94c95675,QA1.1,ca,Catalan,Food,train/3triples/Food.xml::Id307,"Spain | leader | Felipe_VI_of_Spain
+Ajoblanco | country | Spain
+Spain | ethnicGroup | Spaniards","Espanya | Líder | Felip_VI_d'Espanya
+ajoblanco | País | Espanya
+Espanya | GrupÈtnic | espanyols","Felipe VI of Spain is the leader of Spain, where Spaniards are the ethnic group and where Ajoblanco originates from.","Felip VI d'Espanya és el líder d'Espanya, on els espanyols són el grup ètnic i d'on prové Ajoblanco.","Expected triples: 3; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: Felip VI d'Espanya és el líder d'Espanya, on els espanyols són el grup ètnic i d'on prové Ajoblanco.
+El plat d'ajoblanco és d'Espanya on Felipe VI és el líder i els espanyols són un grup ètnic.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA31-CA-79cdd9158277,QA3.1,ca,Catalan,City,train/3triples/City.xml::Id13::Id3,"Albany,_Georgia | isPartOf | Dougherty_County,_Georgia
+Albany,_Georgia | country | United_States
+Albany,_Georgia | isPartOf | Georgia_(U.S._state)","Albany,_Geòrgia | ÉsPartDe | Comtat_de_Dougherty,_Geòrgia
+Albany,_Geòrgia | País | Estats_Units_d'Amèrica
+Albany,_Geòrgia | ÉsPartDe | Georgia_(estat_dels_Estats_Units)","The city of Albany, Georgia, USA is in Dougherty county.","La ciutat d'Albany, Geòrgia, EUA es troba al comtat de Dougherty.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.9375540614128113, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA31-ES-20976c64ca85,QA3.1,es,Spanish,CelestialBody,train/1triples/CelestialBody_allSolutions.xml::Id62::Id3,101_Helena | absoluteMagnitude | 8.33,101_Helena | MagnitudAbsoluta | 8.33,101 Helena’s absolute magnitude is 8.33.,"101 La magnitud absoluta de Helena es 8,33.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.4745112359523773, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA32-ES-2df23e657c27,QA3.2,es,Spanish,Astronaut,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1152::Id2,"Alan_Shepard | deathPlace | California
+Alan_Shepard | dateOfRetirement | ""1974-08-01""
+Alan_Shepard | birthPlace | New_Hampshire","Alan_Bartlett_Shepard | LugarDeLaMuerte | California
+Alan_Bartlett_Shepard | FechaDeJubilación | 01-08-1974
+Alan_Bartlett_Shepard | LugarDeNacimiento | Nuevo_Hampshire","Alan Shepard's birth place was New Hampshire. He retired on the 1st of August 1974, and he died in California.",Alan Shepard nació en New Hampshire. Se jubiló el 1 de agosto de 1974 y murió en California.,"Different English reference from the same RDF entry:
+Alan Shepard was born in New Hampshire, retired in August 1st,1974 and he died in California.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.04128742218017578, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9321475625038147, ""comparison_reference_similarity"": 0.9734349846839905, ""expansion_ratio"": 0.9, ""extreme_advantage"": true, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA31-ES-816dabc346cd,QA3.1,es,Spanish,Airport,train/5triples/Airport.xml::Id71::Id1,"Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force
+United_States_Air_Force | battle | Invasion_of_Grenada
+United_States_Air_Force | attackAircraft | Lockheed_AC-130
+United_States_Air_Force | battle | United_States_invasion_of_Panama
+United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules","Base_aérea_de_Al_Asad | OrganizaciónOperativa | Fuerza_Aérea_de_los_Estados_Unidos
+Fuerza_Aérea_de_los_Estados_Unidos | Batalla | Invasión_de_Granada
+Fuerza_Aérea_de_los_Estados_Unidos | AviónDeAtaque | Lockheed_AC-130
+Fuerza_Aérea_de_los_Estados_Unidos | Batalla | invasión_estadounidense_de_Panamá
+Fuerza_Aérea_de_los_Estados_Unidos | AvionesDeTransporte | Lockheed_C-130_Hercules","The Lockheed AC-130, an attack aircraft, and the Lockheed C-130 Hercules, a transport aircraft, are used by the United States Air Force. The likes of which was involved in the Invasion of Grenada and Panama and operates the Al Asad Airbase.","El Lockheed AC-130, un avión de ataque, y el Lockheed C-130 Hercules, un avión de transporte, son utilizados por las Fuerzas Aéreas de Estados Unidos. Participaron en la invasión de Granada y Panamá y operan la base aérea de Al Asad.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.9131529331207275, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA12-ES-552077675753,QA1.2,es,Spanish,entity_or_value,2004-07-14,,,,,"Observed target forms and counts: {""14-07-2004"": 17}
+Example mappings:
+dev/2triples/CelestialBody.xml::Id4: 2004-07-14 → 14-07-2004
+dev/5triples/CelestialBody.xml::Id2: 2004-07-14 → 14-07-2004
+train/1triples/CelestialBody_allSolutions.xml::Id44: 2004-07-14 → 14-07-2004
+train/2triples/CelestialBody.xml::Id31: 2004-07-14 → 14-07-2004",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 17, ""target_form_count"": 1}"
+QA31-ES-54811d2ddf7d,QA3.1,es,Spanish,WrittenWork,dev/5triples/WrittenWork.xml::Id3::Id3,"Above_the_Veil | country | Australians
+Into_Battle_(novel) | followedBy | The_Violet_Keystone
+Above_the_Veil | followedBy | Into_Battle_(novel)
+Above_the_Veil | precededBy | Aenir
+Aenir | precededBy | Castle_(novel)","Por_encima_del_velo | País | australianos
+Into_Battle_(novela) | SeguidoDe | La_Llave_Violeta
+Por_encima_del_velo | SeguidoDe | Into_Battle_(novela)
+Por_encima_del_velo | PrecedidoPor | Aenir
+Aenir | PrecedidoPor | Castillo_(novela)",Above the Veil is an Australian novel and the sequel to Aenir and Castle. It was followed by Into the Battle and The Violet Keystone.,Above the Veil es una novela australiana y la secuela de Aenir and Castle. Le siguieron Into the Battle y The Violet Keystone.,Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""es"", ""target_language_probability"": 0.5837489366531372, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA31-CA-d9f426adbebb,QA3.1,ca,Catalan,Artist,train/1triples/Artist_allSolutions.xml::Id175::Id1,Anders_Osborne | associatedBand/associatedMusicalArtist | Kirk_Joseph,Anders_Osborne | BandaAssociada/artistaMusicalAssociat | Kirk_Joseph,Anders Osborne has collaborated with Kirk Joseph.,Anders Osborne ha col·laborat amb Kirk Joseph.,Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.5392077565193176, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA31-ES-a05690f134a8,QA3.1,es,Spanish,MeanOfTransportation,train/4triples/MeanOfTransportation.xml::Id225::Id1,"MTU_Friedrichshafen | city | Friedrichshafen
+MTU_Friedrichshafen | parentCompany | Rolls-Royce_Power_Systems
+MTU_Friedrichshafen | owner | Rolls-Royce_Holdings
+A-Rosa_Luna | powerType | MTU_Friedrichshafen","MTU_Friedrichshafen | Ciudad | Friedrichshafen
+MTU_Friedrichshafen | EmpresaMatriz | Rolls-Royce_Power_Systems
+MTU_Friedrichshafen | Propietario | Rolls-Royce_Holdings
+A-Rosa_Luna | TipoDePotencia | MTU_Friedrichshafen","The A-Rosa Luna is powered by a MTU Friedrichshafen engine. MTU Friedrichshafen, whose parent company is Rolls-Royce Power Systems, is owned by Rolls-Royce Holdings and is in Friedrichshafen.","El A-Rosa Luna está propulsado por un motor MTU Friedrichshafen. MTU Friedrichshafen, cuya empresa matriz es Rolls-Royce Power Systems, es propiedad de Rolls-Royce Holdings y está en Friedrichshafen.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.8037099838256836, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA32-CA-fdb8a299ed33,QA3.2,ca,Catalan,Airport,train/1triples/Airport_allSolutions.xml::Id251::Id1,Pakistan | leader | Nawaz_Sharif,Pakistan | Líder | Nawaz_Sharif,Pakistan's leader is Nawaz Sharif.,El líder del Pakistan és Nawaz Sharif.,"Different English reference from the same RDF entry:
+The leader of Pakistan is Nawaz Sharif.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": -0.0010324716567993164, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9967403411865234, ""comparison_reference_similarity"": 0.9977728128433228, ""expansion_ratio"": 1.4, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": true}"
+QA21-CA-d078b5059a28,QA2.1,ca,Catalan,Food,train/4triples/Food.xml::Id37::Id2,"Arrabbiata_sauce | ingredient | Tomato
+Tomato | division | Flowering_plant
+Tomato | order | Solanales
+Tomato | family | Solanaceae","salsa_arrabbiata | Ingredient | tomàquet
+tomàquet | Divisió | planta_amb_flors
+tomàquet | Ordre | Solanals
+tomàquet | Família | solanàcies","Arrabbiata sauce includes tomatoes which are part of the flowering plant division and solanaceae family, order of Solanales.","La salsa arrabbiata inclou tomàquets, que formen part de la divisió de plantes amb flors i de la família de les solanàcies, de l'ordre de les solanals.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""text_similarity""], ""below_1_percent"": [], ""below_5_percent"": [""text_similarity""], ""predicate_similarity"": 0.9731110781431198, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.7759095430374146, ""triple_similarity"": 0.9079909920692444}"
+QA22-ES-f18bb32afe29,QA2.2,es,Spanish,MeanOfTransportation,train/3triples/MeanOfTransportation.xml::Id150::Id2,"Antares_(rocket) | manufacturer | Orbital_ATK
+Antares_(rocket) | launchSite | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0
+Antares_(rocket) | function | ""Medium expendable launch system""","Antares_(cohete) | Fabricante | Orbital_ATK
+Antares_(cohete) | LugarDeLanzamiento | Plataforma_de_lanzamiento_0_del_Puerto_Espacial_Regional_del_Atlántico_Medio
+Antares_(cohete) | Función | Sistema_de_lanzamiento_medio",The Antares rocket function is a medium expendable launch system manufactured by Orbital ATK and was launched at the Mid-Atlantic Regional Spaceport Launch Pad 0.,El cohete Antares es un sistema de lanzamiento prescindible medio fabricado por Orbital ATK y se lanzó en la plataforma de lanzamiento 0 del Mid-Atlantic Regional Spaceport.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.7055510878562927, ""minimum_triple_coverage"": 0.5985782146453857, ""target_text_literal_retention"": 1.0}"
+QA31-CA-02a164be5c49,QA3.1,ca,Catalan,Athlete,train/2triples/Athlete.xml::Id98::Id2,"Alan_Martin_(footballer) | club | Clyde_F.C.
+Clyde_F.C. | ground | Broadwood_Stadium","Alan_Martin_(futbolista) | Trèvols | Clyde_FC
+Clyde_FC | Terra | Estadi_Broadwood",Alan Martin plays football for the Clyde FC club at The Broadwood Stadium.,Alan Martin juga futbol pel club Clyde FC al Broadwood Stadium.,Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.6709824204444885, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA12-ES-334322866f2f,QA1.2,es,Spanish,entity_or_value,Wisconsin,,,,,"Observed target forms and counts: {""wisconsin"": 3}
+Example mappings:
+train/1triples/Company_allSolutions.xml::Id45: Wisconsin → Wisconsin
+train/3triples/Company.xml::Id57: Wisconsin → Wisconsin
+train/4triples/Company.xml::Id42: Wisconsin → Wisconsin",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 3, ""target_form_count"": 1}"
+QA11-ES-257d1c4605c7,QA1.1,es,Spanish,SportsTeam,train/2triples/SportsTeam.xml::Id90,"A.S._Livorno_Calcio | manager | Christian_Panucci
+Christian_Panucci | club | Genoa_C.F.C.","A.S._Livorno_Calcio | Director | Christian_Panucci
+Christian_Panucci | Club | Genoa_C.F.C.",A.S. Livorno Calcio is managed by Christian Panucci who played football for Genoa C.F.C.,"El A.S. Livorno Calcio está dirigido por Christian Panucci, que jugó al fútbol en el Genoa C.F.C.","Expected triples: 2; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: El A.S. Livorno Calcio está dirigido por Christian Panucci, que jugó al fútbol en el Genoa C.F.C.
+El A.S. Livorno Calcio está dirigido por Christian Panucci, vinculado al club Genoa CFC.
+El A.S. Livorno Calcio está dirigido por Christian Panucci, que jugó al fútbol en el Genoa C.F.C.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA22-CA-d9673705c34f,QA2.2,ca,Catalan,CelestialBody,dev/1triples/CelestialBody_allSolutions.xml::Id16::Id3,109_Felicitas | temperature | 170.0 (kelvins),(109)_Felicitas | Temperatura | 170.0_(kelvins),The temperature of the asteroid called 109 Felicitas is 170.0 kelvins.,"La temperatura de l'asteroide anomenat 109 Felicitas és de 170,0 kelvins.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6595041155815125, ""minimum_triple_coverage"": 0.6595041155815125, ""target_text_literal_retention"": 1.0}"
+QA31-CA-6543dc965731,QA3.1,ca,Catalan,MusicalWork,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1566::Id3,"Mermaid_(Train_song) | recordLabel | Sony_Music_Entertainment
+Mermaid_(Train_song) | writer | Espen_Lind","Sirena_(cançó_de_tren) | EtiquetaDelRegistre | Sony_Music_Entertainment_(anglès)
+Sirena_(cançó_de_tren) | Escriptor | Espen_Lind","The song ""Mermaid"" by Train was originally written by Espen Lind and released under the record label of Sony Music Entertainment.","La cançó ""Mermaid"" de Train va ser escrita originalment per Espen Lind i llançada sota el segell discogràfic de Sony Music Entertainment.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.8593191504478455, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA31-ES-b28c82e49848,QA3.1,es,Spanish,WrittenWork,train/4triples/WrittenWork.xml::Id91::Id3,"Addiction_(journal) | issnNumber | ""1360-0443""
+Addiction_(journal) | LCCN_number | 93645978
+Addiction_(journal) | abbreviation | ""Addiction""
+Addiction_(journal) | publisher | ""Wiley-Blackwell on behalf of the Society for the Study of Addiction""","Addiction_(revista) | NúmeroIssn | 1360-0443
+Addiction_(revista) | LCCNNúmero | 93645978
+Addiction_(revista) | Abreviatura | adicción
+Addiction_(revista) | Editor | Wiley-Blackwell_en_nombre_de_la_Sociedad_para_el_Estudio_de_la_Adicción","Addiction (journal) abbreviated to Addiction has an ISSN number of 1360-0443, a LCCN number of 93645978 and was published by Wiley-Blackwell on behalf of the Society of the Study of Addiction.","Addiction (revista) abreviada Addiction tiene un número ISSN de 1360-0443, un número LCCN de 93645978 y fue publicada por Wiley-Blackwell en nombre de la Society of the Study of Addiction.",Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""es"", ""target_language_probability"": 0.8248382210731506, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA21-ES-3aac4b4250e8,QA2.1,es,Spanish,Astronaut,dev/5triples/Astronaut.xml::Id11::Id2,"William_Anders | dateOfRetirement | ""1969-09-01""
+Apollo_8 | commander | Frank_Borman
+William_Anders | mission | Apollo_8
+Apollo_8 | backupPilot | Buzz_Aldrin
+Apollo_8 | operator | NASA","William_Anders | FechaDeJubilación | 01-09-1969
+Apolo_8 | Comandante | Frank_Borman
+William_Anders | Misión | Apolo_8
+Apolo_8 | PilotoDeReserva | Buzz_Aldrin
+Apolo_8 | Operador | Administración_Nacional_de_Aeronáutica_y_del_Espacio","William Anders, who retired on September 1st, 1969, was a crew member on Apollo 8 and served under commander Frank Borman. Apollo 8 was operated by NASA with Buzz Aldrin as backup pilot.","William Anders, que se jubiló el 1 de septiembre de 1969, fue miembro de la tripulación del Apolo 8 y sirvió a las órdenes del comandante Frank Borman. El Apolo 8 fue operado por la NASA con Buzz Aldrin como piloto de reserva.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.7976130753755569, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9307987093925476, ""triple_similarity"": 0.9119783639907837}"
+QA22-CA-817f6339ffa3,QA2.2,ca,Catalan,MeanOfTransportation,dev/1triples/MeanOfTransportation_allSolutions.xml::Id18::Id4,Alhambra | maidenVoyage | 1855-07-07,Alhambra | MaidenVoyage | 1855-07-07,"The Alhambra had its first trip on July 7, 1855.",L'Alhambra va fer el seu primer viatge el 7 de juliol de 1855.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,both English-calibrated support directions fail.,"{""coverage_pass"": false, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.3863874673843384, ""minimum_triple_coverage"": 0.38638752698898315, ""target_text_literal_retention"": 1.0}"
+QA11-CA-36c067ef7a38,QA1.1,ca,Catalan,Politician,train/5triples/Politician.xml::Id70,"Agnes_Kant | nationality | Netherlands
+Netherlands | leader | Mark_Rutte
+Netherlands | currency | Euro
+Socialist_Party_(Netherlands) | leader | Emile_Roemer
+Agnes_Kant | party | Socialist_Party_(Netherlands)","Agnes_Kant | Nacionalitat | Països_Baixos
+Països_Baixos | Líder | Mark_Rutte
+Països_Baixos | Moneda | euro
+Partit_Socialista_(Països_Baixos) | Líder | Emile_Roemer
+Agnes_Kant | Festa | Partit_Socialista_(Països_Baixos)","The Euro is the currency in the Netherlands, the leader of which, is Mark Rutte. A Netherlands national, Agnes Kant is a member of the Socialist Party in the Netherlands which is led by Emile Roemer.","L'euro és la moneda dels Països Baixos, el líder dels quals és Mark Rutte. La ciutadana neerlandesa Agnes Kant és membre del Partit Socialista dels Països Baixos, liderat per Emile Roemer.","Expected triples: 5; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: L'euro és la moneda dels Països Baixos, el líder dels quals és Mark Rutte. La ciutadana neerlandesa Agnes Kant és membre del Partit Socialista dels Països Baixos, liderat per Emile Roemer.
+La moneda dels Països Baixos és l' euro i el líder dels Països Baixos és Mark Rutte. Agnes Kant, nacional dels Països Baixos, és membre del Partit Socialista dels Països Baixos, el líder del qual es diu Emile Roemer.
+Mark Rutte és el líder dels Països Baixos, on la moneda és l'euro. Agnes Kant és una ciutadana del país i membre del Partit Socialista, liderat per Emile Roemer.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA22-CA-f6659116e219,QA2.2,ca,Catalan,SportsTeam,train/5triples/SportsTeam.xml::Id39::Id2,"Italy | leader | Pietro_Grasso
+Italy | demonym | Italians
+Italy | leader | Sergio_Mattarella
+A.S._Gubbio_1910 | ground | Italy
+Italy | language | Italian_language","Itàlia | Líder | Pietro_Grasso
+Itàlia | Demònim | italians
+Itàlia | Líder | Sergio_Mattarella
+A.S._Gubbio_1910 | Terra | Itàlia
+Itàlia | Llengua | Llengua_italiana","The ground of A.S. Gubbio 1910 is located in Italy, where Italians live and where the language spoken is Italian. Pietro Grasso and Sergio Mattarella are leaders in Italy.","El camp de l'A.S. Gubbio 1910 és a Itàlia, on viuen els italians i on es parla l'italià. Pietro Grasso i Sergio Mattarella són líders a Itàlia.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": true, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.3216918110847473, ""minimum_triple_coverage"": 0.4453617334365845, ""target_text_literal_retention"": 1.0}"
+QA31-ES-771ce7d542d9,QA3.1,es,Spanish,Company,train/3triples/Company.xml::Id75::Id3,"Trane | revenue | 10264000000
+Trane | netIncome | 556300000
+Trane | location | Swords,_Dublin","Trane | Ingresos | 10264000000
+Trane | IngresosNetos | 556300000
+Trane | Ubicación | Swords,_Dublín","Trane, which is located in Swords, Dublin, has a revenue of 10264000000 but a net income of $556,300,000.","Trane, con sede en Swords (Dublín), tiene unos ingresos de 10264000000 pero unos ingresos netos de 556.300.000 dólares.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.8317199349403381, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA32-CA-94c1eb52408c,QA3.2,ca,Catalan,City,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id833::Id1,Mexico | areaTotal | 1972550.0,Mèxic | TotalDeL'Àrea | 1972550.0,"The total area of Mexico is 1,972,550 square kilometers.",La superfície total de Mèxic és de 1.972.550 quilòmetres quadrats.,"Different English reference from the same RDF entry:
+Mexico has a total area of 1972550.0.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.24404537677764893, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.91791832447052, ""comparison_reference_similarity"": 0.6738729476928711, ""expansion_ratio"": 1.1111111111111112, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA11-CA-e5b85077abd8,QA1.1,ca,Catalan,Artist,train/3triples/Artist.xml::Id138,"Alfredo_Zitarrosa | genre | Candombe
+Alfredo_Zitarrosa | recordLabel | Orfeo_(Uruguayan_record_label)
+Alfredo_Zitarrosa | background | ""solo_singer""","Alfredo_Zitarrosa | Gènere | candombe
+Alfredo_Zitarrosa | EtiquetaDelRegistre | Orfeo_(empresa_discogràfica_uruguaiana)
+Alfredo_Zitarrosa | Antecedents | cantant_en_solitari",Alfredo Zitarrosa started out as a solo singer and belongs to the Orfeo record label. The musical genre of Alfredo Zitarrosa is Candombe.,Alfredo Zitarrosa va començar com a cantant en solitari i pertany al segell discogràfic Orfeo. El gènere musical d'Alfredo Zitarrosa és el candombe.,"Expected triples: 3; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Alfredo Zitarrosa va començar com a cantant en solitari i pertany al segell discogràfic Orfeo. El gènere musical d'Alfredo Zitarrosa és el candombe.
+Alfredo Zitarrosa, que va començar com a cantant en solitari, està amb el segell discogràfic Orfeo.El gènere musical d'Alfredo Zitarrosa és el candombe.
+El gènere musical d'Alfredo Zitarrosa és el Candombe, va començar com a cantant en solitari i està signat amb el segell discogràfic uruguaià Orfeo.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA11-CA-86aff24bf2c8,QA1.1,ca,Catalan,MeanOfTransportation,train/1triples/MeanOfTransportation_allSolutions.xml::Id274,Plymouth_Plaza | manufacturer | Plymouth_(automobile),Plymouth_Plaza | Fabricant | Plymouth_(automòbil),The Plymouth Plaza was manufactured by Plymouth.,El Plymouth Plaza va ser fabricat per Plymouth.,"Expected triples: 1; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: El Plymouth Plaza va ser fabricat per Plymouth.
+Plymouth són els fabricants del Plymouth Plaza.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA22-ES-632c62cb6208,QA2.2,es,Spanish,SportsTeam,dev/2triples/SportsTeam.xml::Id15::Id3,"AFC_Ajax_(amateurs) | ground | Amsterdam
+Amsterdam | leader | Eberhard_van_der_Laan","AFC_Ajax_(aficionados) | Suelo | Ámsterdam
+Ámsterdam | Líder | Eberhard_van_der_Laan",AFC Ajax is based in Amsterdam where Eberhard van der Laan is a leader.,"El AFC Ajax tiene su sede en Ámsterdam, donde dirige Eberhard van der Laan.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.5986708402633667, ""minimum_triple_coverage"": 0.5368243455886841, ""target_text_literal_retention"": null}"
+QA22-ES-461840d184d1,QA2.2,es,Spanish,Film,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id791::Id1,English_Without_Tears | editing | Alan_Jaggs,Amor_en_seis_lecciones | Edición | Alan_Jaggs,The editing of the movie English Without Tears was done by Alan Jaggs.,El montaje de la película English Without Tears corrió a cargo de Alan Jaggs.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,both English-calibrated support directions fail.,"{""coverage_pass"": false, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.33727753162384033, ""minimum_triple_coverage"": 0.33727753162384033, ""target_text_literal_retention"": null}"
+QA12-CA-cd85003149a5,QA1.2,ca,Catalan,predicate,operator,,,,,"Observed target forms and counts: {""operador"": 186}
+Example mappings:
+dev/1triples/Astronaut_allSolutions.xml::Id4: operator → Operador
+dev/1triples/Astronaut_allSolutions.xml::Id5: operator → Operador
+dev/2triples/Astronaut.xml::Id4: operator → Operador
+dev/2triples/MeanOfTransportation.xml::Id3: operator → Operador",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 186, ""target_form_count"": 1}"
+QA31-CA-dc59d1172745,QA3.1,ca,Catalan,CelestialBody,train/5triples/CelestialBody.xml::Id15::Id1,"(66063)_1998_RO1 | orbitalPeriod | 360.29 (days)
+(66063)_1998_RO1 | periapsis | 41498400000.0
+(66063)_1998_RO1 | epoch | 2013-11-04
+(66063)_1998_RO1 | escapeVelocity | 0.0999 (kilometrePerSeconds)
+(66063)_1998_RO1 | apoapsis | 254989570.60815 (kilometres)","(66063)_1998_RO1 | PeríodeOrbital | 360.29_(dies)
+(66063)_1998_RO1 | Periàpside | 41498400000.0
+(66063)_1998_RO1 | Època | 2013-11-04
+(66063)_1998_RO1 | VelocitatD'escapament | 0.0999_(kilòmetrePer_Segons)
+(66063)_1998_RO1 | Apoapsis | 254989570.60815_(kilòmetres)","(66063) 1998 RO1 which has an orbital period of 360.29 days and an escape velocity of 0.0999 km per sec, has the epoch date of 4 November 2013. The asteroid has a periapsis of 41498400000.0 and apoapsis of 254989570.60815 kilometres.","(66063) 1998 RO1, que té un període orbital de 360.29 dies i una velocitat d'escapament de 0.0999 km per segon, té la data d'època del 4 de novembre de 2013. L'asteroide té un periapsi de 41498400000.0 i apoapsis de 254989570.60815 quilòmetres.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.9341526627540588, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA12-CA-7aea6169cd26,QA1.2,ca,Catalan,entity_or_value,Banana_leaf,,,,,"Observed target forms and counts: {""fulla de banana"": 19}
+Example mappings:
+dev/2triples/Food.xml::Id5: Banana_leaf → fulla_de_banana
+dev/4triples/Food.xml::Id3: Banana_leaf → fulla_de_banana
+dev/4triples/Food.xml::Id4: Banana_leaf → fulla_de_banana
+train/1triples/Food_allSolutions.xml::Id27: Banana_leaf → fulla_de_banana",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 19, ""target_form_count"": 1}"
+QA21-ES-265b9063ad3b,QA2.1,es,Spanish,Athlete,train/4triples/Athlete.xml::Id69::Id1,"Alan_Martin_(footballer) | club | Accrington_Stanley_F.C.
+Alan_Martin_(footballer) | birthDate | 1989-01-01
+Alan_Martin_(footballer) | height | 185.42 (centimetres)
+Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.","Alan_Martin_(futbolista) | Club | Accrington_Stanley_F.C
+Alan_Martin_(futbolista) | FechaDeNacimiento | 01-01-1989
+Alan_Martin_(futbolista) | Altura | 185,42_(centímetros)
+Alan_Martin_(futbolista) | Club | Crewe_Alexandra_Football_Club",Alan Martin is 185.42 cm tall and was born on 1 January 1989. He currently plays for Crewe Alexandra FC and previously for Accrington Stanley FC.,"Alan Martin mide 185,42 cm y nació el 1 de enero de 1989. Actualmente juega en el Crewe Alexandra FC y anteriormente en el Accrington Stanley FC.",English lexicalisation ID: Id1; target lexicalisation ID: Id1,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.7776387631893158, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9650197625160217, ""triple_similarity"": 0.9001365900039673}"
+QA21-CA-6c5dfa93cd1a,QA2.1,ca,Catalan,WrittenWork,train/3triples/WrittenWork.xml::Id93::Id1,"A_Loyal_Character_Dancer | publisher | Soho_Press
+A_Loyal_Character_Dancer | country | United_States
+United_States | ethnicGroup | Asian_Americans","Una_ballarina_de_caràcter_lleial | Editor | Soho_Press
+Una_ballarina_de_caràcter_lleial | País | Estats_Units_d'Amèrica
+Estats_Units_d'Amèrica | GrupÈtnic | estatunidencs_asiàtics",A Loyal Character Dancer is published by Soho Press in the United States. The United States has an ethnic group called Asian Americans.,A Loyal Character Dancer és publicat per Soho Press als Estats Units. Els Estats Units tenen un grup ètnic anomenat asiàtics americans.,English lexicalisation ID: Id1; target lexicalisation ID: Id1,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.7991031805674235, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9853298664093018, ""triple_similarity"": 0.9387956261634827}"
+QA21-ES-df0298760fa1,QA2.1,es,Spanish,Airport,train/1triples/Airport_allSolutions.xml::Id294::Id2,United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules,Fuerza_Aérea_de_los_Estados_Unidos | AvionesDeTransporte | Lockheed_C-130_Hercules,The transport aircraft for the United States Air Force is the Lockheed C-130 Hercules.,El avión de transporte de las Fuerzas Aéreas de Estados Unidos es el Lockheed C-130 Hercules.,English lexicalisation ID: Id2; target lexicalisation ID: Id2,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.6766926050186157, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.982836127281189, ""triple_similarity"": 0.962441623210907}"
+QA22-CA-fee4a132e72c,QA2.2,ca,Catalan,Airport,train/2triples/Airport.xml::Id59::Id3,"Al_Asad_Airbase | location | Iraq
+Al_Asad_Airbase | runwayLength | 3078.48","base_aèria_Al_Asad | Ubicació | Iraq
+base_aèria_Al_Asad | LongitudDeLaPista | 3078.48","The runway length of Al Asad Airbase, located in Iraq, is 3078.48.","La longitud de la pista de la base aèria d'Al Asad, situada a l'Iraq, és de 3078,48.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6864490509033203, ""minimum_triple_coverage"": 0.6619080305099487, ""target_text_literal_retention"": 1.0}"
+QA12-ES-567e8ba72a2f,QA1.2,es,Spanish,entity_or_value,Squid,,,,,"Observed target forms and counts: {""calamar"": 6, ""teuthida"": 1}
+Example mappings:
+dev/1triples/Food_allSolutions.xml::Id7: Squid → calamar
+dev/2triples/Food.xml::Id9: Squid → Teuthida
+dev/3triples/Food.xml::Id8: Squid → calamar
+train/2triples/Food.xml::Id58: Squid → calamar",High,Multiple target forms are observed and the dominant form accounts for less than 90% of mappings.,"{""dominant_mapping_rate"": 0.8571428571428571, ""mapping_review_signal"": true, ""occurrences"": 7, ""target_form_count"": 2}"
+QA22-CA-30b349f46c72,QA2.2,ca,Catalan,Food,dev/3triples/Food.xml::Id34::Id1,"Celery | genus | Apium
+Bakso | ingredient | Celery
+Celery | family | Apiaceae","Celeriac | Gènere | Apium
+Bakso | Ingredient | Celeriac
+Celeriac | Família | Apiaceae","One ingredient in Bakso is celery, which is a member of the genus Apium in the family Apiaceae.","Un dels ingredients del Bakso és l'api, que és un membre del gènere Apium de la família Apiaceae.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,both English-calibrated support directions fail.,"{""coverage_pass"": false, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.4188469648361206, ""minimum_triple_coverage"": 0.1381310224533081, ""target_text_literal_retention"": null}"
+QA12-ES-09e788a345fb,QA1.2,es,Spanish,entity_or_value,Psychedelic_folk,,,,,"Observed target forms and counts: {""acid folk"": 7}
+Example mappings:
+train/1triples/Artist_allSolutions.xml::Id146: Psychedelic_folk → Acid_folk
+train/2triples/Artist.xml::Id158: Psychedelic_folk → Acid_folk
+train/2triples/Artist.xml::Id159: Psychedelic_folk → Acid_folk
+train/3triples/Artist.xml::Id145: Psychedelic_folk → Acid_folk",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 7, ""target_form_count"": 1}"
+QA22-CA-19f89486e0d8,QA2.2,ca,Catalan,WrittenWork,train/2triples/WrittenWork.xml::Id142::Id3,"Administrative_Science_Quarterly | LCCN_number | 57059226
+Administrative_Science_Quarterly | abbreviation | ""Admin. Sci. Q.""","Ciències_administratives_trimestralment | NúmeroLCCN | 57059226
+Ciències_administratives_trimestralment | Abreviació | Administració._Ciència._Q.",Admin. Sci. Q is the abbreviation for the Administrative Science Quarterly which has the LCCN number of 57059226.,Admin. Sci. Q és l' abreviatura de l' Administrative Science Quarterly que té el número LCCN de 57059226.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": true, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.43263334035873413, ""minimum_triple_coverage"": 0.6829333305358887, ""target_text_literal_retention"": 1.0}"
+QA12-ES-83585a01e35c,QA1.2,es,Spanish,entity_or_value,Rhythm_and_blues,,,,,"Observed target forms and counts: {""rhythm and blues"": 256, ""ritmo y blues"": 2}
+Example mappings:
+dev/2triples/Artist.xml::Id10: Rhythm_and_blues → rhythm_and_blues
+dev/2triples/Artist.xml::Id21: Rhythm_and_blues → rhythm_and_blues
+dev/3triples/Artist.xml::Id18: Rhythm_and_blues → rhythm_and_blues
+dev/3triples/Artist.xml::Id19: Rhythm_and_blues → rhythm_and_blues",Medium,"Multiple target forms are observed, but one form remains strongly dominant.","{""dominant_mapping_rate"": 0.9922480620155039, ""mapping_review_signal"": true, ""occurrences"": 258, ""target_form_count"": 2}"
+QA21-ES-9947dd19f128,QA2.1,es,Spanish,WrittenWork,train/2triples/WrittenWork.xml::Id22::Id1,"1634:_The_Ram_Rebellion | author | Eric_Flint
+1634:_The_Ram_Rebellion | mediaType | ""Print""","1634:_Rebelión_de_los_Carneros | Autor | Eric_Flint
+1634:_Rebelión_de_los_Carneros | TipoDeMedio | Print",1634: The Ram Rebellion was written by Eric Flint and published in print.,1634: La Rebelión de los Carneros fue escrito por Eric Flint y publicado en la imprenta.,English lexicalisation ID: Id1; target lexicalisation ID: Id1,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""text_similarity"", ""triple_similarity"", ""predicate_similarity""], ""below_1_percent"": [], ""below_5_percent"": [""triple_similarity""], ""predicate_similarity"": 0.5590420290827751, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.8774937987327576, ""triple_similarity"": 0.7683788537979126}"
+QA21-ES-8f5ce19027b0,QA2.1,es,Spanish,Food,train/1triples/Food_allSolutions.xml::Id103::Id3,"Bakso | mainIngredient | ""Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots""","Bakso | IngredientePrincipal | Carne_picada,_tapioca,_fideos,_fideos_de_arroz,_caldo_de_carne,_kailan,_apio,_verduras_saladas,_chalotas_fritas","Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, and fried shallots are main ingredients in Bakso.","Carne picada, tapioca, fideos, fideos de arroz, caldo de carne, kailan, apio, verduras saladas y chalotas fritas son los principales ingredientes del Bakso.",English lexicalisation ID: Id3; target lexicalisation ID: Id3,High,a semantic score is in the lowest 1%.,"{""below_10_percent"": [""text_similarity"", ""predicate_similarity""], ""below_1_percent"": [""predicate_similarity""], ""below_5_percent"": [""predicate_similarity""], ""predicate_similarity"": 0.27265438437461853, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.8558606505393982, ""triple_similarity"": 0.8964120149612427}"
+QA22-ES-81a8614089d8,QA2.2,es,Spanish,Astronaut,train/2triples/Astronaut.xml::Id39::Id2,"William_Anders | birthDate | ""1933-10-17""
+William_Anders | almaMater | ""AFIT, M.S. 1962""","William_Anders | FechaDeNacimiento | 17-10-1933
+William_Anders | AlmaMáter | AFIT,_M.S._1962","William Anders, who was born on the 17th of October 1933, graduated from AFIT, M.S. in 1962.","William Anders, nacido el 17 de octubre de 1933, se licenció en AFIT en 1962.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,both English-calibrated support directions fail.,"{""coverage_pass"": false, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.4541550874710083, ""minimum_triple_coverage"": 0.36348897218704224, ""target_text_literal_retention"": 1.0}"
+QA12-CA-cbaa036e43d0,QA1.2,ca,Catalan,entity_or_value,"Cyrus_Vance,_Jr.",,,,,"Observed target forms and counts: {""cyrus vance, jr."": 6}
+Example mappings:
+train/1triples/Building_allSolutions.xml::Id201: Cyrus_Vance,_Jr. → Cyrus_Vance,_Jr.
+train/2triples/Building.xml::Id153: Cyrus_Vance,_Jr. → Cyrus_Vance,_Jr.
+train/4triples/Building.xml::Id165: Cyrus_Vance,_Jr. → Cyrus_Vance,_Jr.
+train/5triples/Building.xml::Id117: Cyrus_Vance,_Jr. → Cyrus_Vance,_Jr.",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 6, ""target_form_count"": 1}"
+QA22-CA-75a1e646925f,QA2.2,ca,Catalan,ComicsCharacter,train/2triples/ComicsCharacter.xml::Id53::Id1,"Black_Pirate | creator | Sheldon_Moldoff
+Sheldon_Moldoff | award | Inkpot_Award","Pirata_negre | Creador | Sheldon_Moldoff
+Sheldon_Moldoff | Premi | Premi_Inkpot",Sheldon Moldoff created the Black Pirate and won the Inkpot Award.,Sheldon Moldoff va crear el Pirata Negre i va guanyar el Premi Inkpot.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6563592553138733, ""minimum_triple_coverage"": 0.5790374279022217, ""target_text_literal_retention"": null}"
+QA22-CA-a43f235e3b5c,QA2.2,ca,Catalan,WrittenWork,train/3triples/WrittenWork.xml::Id208::Id1,"United_States | ethnicGroup | African_Americans
+United_States | capital | Washington,_D.C.
+A_Wizard_of_Mars | country | United_States","Estats_Units_d'Amèrica | GrupÈtnic | negres_estatunidencs
+Estats_Units_d'Amèrica | Capital | Washington_DC
+Un_mag_de_Mart | País | Estats_Units_d'Amèrica","One of the ethnic Groups of the United States (where the capital city is Washington D.C) is African American. Additionally, A Wizard of Mars originates from the United States.","Un dels grups ètnics dels Estats Units (on la capital és Washington D. C.) és afroamericà. A més, A Wizard of Mars s'origina als Estats Units.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6524162292480469, ""minimum_triple_coverage"": 0.5197257399559021, ""target_text_literal_retention"": null}"
+QA12-CA-21330509c105,QA1.2,ca,Catalan,entity_or_value,Superleague_Greece,,,,,"Observed target forms and counts: {""superleague greece"": 30}
+Example mappings:
+dev/3triples/SportsTeam.xml::Id12: Superleague_Greece → Superleague_Greece
+dev/5triples/SportsTeam.xml::Id2: Superleague_Greece → Superleague_Greece
+train/1triples/SportsTeam_allSolutions.xml::Id88: Superleague_Greece → Superleague_Greece
+train/1triples/SportsTeam_allSolutions.xml::Id251: Superleague_Greece → Superleague_Greece",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 30, ""target_form_count"": 1}"
+QA21-CA-43de0c41c330,QA2.1,ca,Catalan,University,train/4triples/University.xml::Id63::Id3,"School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association
+School of Business and Social Sciences at the Aarhus University | city | Aarhus
+European_University_Association | headquarter | Brussels
+School of Business and Social Sciences at the Aarhus University | established | 1928","Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | Afiliació | Associació_d'Universitats_Europees
+Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | Ciutat | Aarhus
+Associació_d'Universitats_Europees | QuarterGeneral | Brussel·les
+Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | Establert | 1928",The School of Business and Social Sciences at the Aarhus University (established 1928 in the city of Aarhus) is affiliated with the European University Association which has its headquarters in Brussels.,L'Escola de Negocis i Ciències Socials de la Universitat d'Aarhus (establerta el 1928 a la ciutat d'Aarhus) està afiliada a l'Associació Universitària Europea que té la seva seu a Brussel·les.,English lexicalisation ID: Id3; target lexicalisation ID: Id3,High,a semantic score is in the lowest 1%.,"{""below_10_percent"": [""text_similarity""], ""below_1_percent"": [""text_similarity""], ""below_5_percent"": [""text_similarity""], ""predicate_similarity"": 0.769523873925209, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.7044742703437805, ""triple_similarity"": 0.8597556352615356}"
+QA31-ES-4c58f83b9662,QA3.1,es,Spanish,WrittenWork,train/4triples/WrittenWork.xml::Id113::Id1,"Alcatraz_Versus_the_Evil_Librarians | numberOfPages | ""320""
+Alcatraz_Versus_the_Evil_Librarians | oclcNumber | 78771100
+Alcatraz_Versus_the_Evil_Librarians | mediaType | ""Print""
+Alcatraz_Versus_the_Evil_Librarians | isbnNumber | ""0-439-92550-9""","Alcatraz_Contra_los_Bibliotecarios_Malvados | NúmeroDePáginas | 320
+Alcatraz_Contra_los_Bibliotecarios_Malvados | NúmeroOclc | 78771100
+Alcatraz_Contra_los_Bibliotecarios_Malvados | TipoDeMedio | Print
+Alcatraz_Contra_los_Bibliotecarios_Malvados | NúmeroIsbn | 0-439-92550-9",Alcatraz Versus the Evil Librarians has 320 pages and is produced in print. The book has an OCLC number of 78771100 and the ISBN number of 0-439-92550-9.,Alcatraz Versus the Evil Librarians tiene 320 páginas y está en imprenta. El libro tiene un número OCLC de 78771100 y el número ISBN de 0-439-92550-9.,Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.8625530004501343, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA32-ES-be102beb7aec,QA3.2,es,Spanish,Artist,train/2triples/Artist.xml::Id111::Id1,"Aleksandra_Kovač | genre | Pop_music
+Pop_music | musicFusionGenre | Disco","Aleksandra_Kovač | Género | pop
+pop | GéneroMusicalFusión | música_disco",Disco is a genre of music that contain elements of other genres such as pop music which is the musical genre of Aleksandra Kovac.,"La música música disco es un género musical que contiene elementos de otros géneros, como la música pop, que es el género musical de Aleksandra Kovac.","Different English reference from the same RDF entry:
+Aleksandra Kovac is a pop music performer and Disco is a fusion genre of pop music.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": -0.02432119846343994, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.7732123732566833, ""comparison_reference_similarity"": 0.7975335717201233, ""expansion_ratio"": 1.0833333333333333, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA12-CA-b92b0cda3f40,QA1.2,ca,Catalan,entity_or_value,Peanut_sauce,,,,,"Observed target forms and counts: {""salsa de cacauet"": 22}
+Example mappings:
+dev/2triples/Food.xml::Id35: Peanut_sauce → Salsa_de_cacauet
+dev/4triples/Food.xml::Id22: Peanut_sauce → Salsa_de_cacauet
+train/1triples/Food_allSolutions.xml::Id129: Peanut_sauce → Salsa_de_cacauet
+train/2triples/Food.xml::Id179: Peanut_sauce → Salsa_de_cacauet",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 22, ""target_form_count"": 1}"
+QA11-CA-39a950c66fec,QA1.1,ca,Catalan,SportsTeam,train/3triples/SportsTeam.xml::Id96,"ACF_Fiorentina | manager | Paulo_Sousa
+Paulo_Sousa | club | Maccabi_Tel_Aviv_F.C.
+Paulo_Sousa | club | Portugal_national_football_team","ACF_Fiorentina | Gerent | Paulo_Manuel_Carvalho_Sousa
+Paulo_Manuel_Carvalho_Sousa | Trèvols | Maccabi_Tel_Aviv_FC
+Paulo_Manuel_Carvalho_Sousa | Trèvols | Selecció_de_futbol_de_Portugal",Paulo Sousa is the manager of the ACF Fiorentina. He plays for Maccabi Tel Aviv F.C. and is also a member of the Portugal National Football Team.,Paulo Sousa és l'entrenador de l'ACF Fiorentina. Juga per al Maccabi Tel Aviv F.C. i també és membre de l'Equip Nacional de Futbol de Portugal.,"Expected triples: 3; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Paulo Sousa és l'entrenador de l'ACF Fiorentina. Juga per al Maccabi Tel Aviv F.C. i també és membre de l'Equip Nacional de Futbol de Portugal.
+L'entrenador de l'ACF Fiorentina és Paulo Sousa que juga pel Maccabi Tel Aviv FC i també per la selecció nacional de futbol de Portugal.
+Paulo Sousa és l'entrenador de l'ACF Fiorentina. Ha jugat amb el Maccabi Tel Aviv F.C. i és membre de l'equip nacional de futbol de Portugal.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA21-ES-62579ea751ce,QA2.1,es,Spanish,Airport,train/1triples/Airport_allSolutions.xml::Id85::Id3,"Alderney_Airport | runwayName | ""03/21""",Aeropuerto_de_Alderney | NombreDeLaPista | 03/21,The runway at Alderney Airport is named 03/21.,La pista del aeropuerto de Alderney se llama 03/21.,English lexicalisation ID: Id3; target lexicalisation ID: Id3,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""predicate_similarity""], ""below_1_percent"": [], ""below_5_percent"": [""predicate_similarity""], ""predicate_similarity"": 0.31741419434547424, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9425885677337646, ""triple_similarity"": 0.8840131759643555}"
+QA31-ES-06f830bd3f22,QA3.1,es,Spanish,Artist,train/1triples/Artist_allSolutions.xml::Id12::Id1,Aaron_Deer | instrument | Guitar,Aaron_Deer | Instrumento | guitarra,Aaron Deer plays the guitar.,Aaron Deer toca la guitarra.,Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.3640837073326111, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA11-ES-5378a2ffc2ff,QA1.1,es,Spanish,Food,train/2triples/Food.xml::Id268,"Singapore | leader | Halimah_Yacob
+Ayam_penyet | region | Singapore","Singapur | Líder | Halimah_Yacob
+Ayam_penyet | Región | Singapur",Ayam penyet is from Singapore whose leader is Halimah Yacob.,Ayam penyet es de Singapur y su líder es Halimah Yacob.,"Expected triples: 2; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Ayam penyet es de Singapur y su líder es Halimah Yacob.
+Ayam penyet es de la región de Singapur, donde Halimah Yacob es dirigente.
+Ayam penyet es de Singapur, donde Halimah Yacob es la líder.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA21-CA-e2cc731b451f,QA2.1,ca,Catalan,SportsTeam,train/2triples/SportsTeam.xml::Id125::Id3,"AZAL_PFK | ground | AZAL_Arena
+AZAL_Arena | location | Azerbaijan","AZAL_PFK | Terra | AZAL_Arena
+AZAL_Arena | Ubicació | Azerbaidjan",AZAL PFK play their home matches at the AZAL Arena in Azerbaijan.,L'AZAL PFK juga els seus partits a casa a l'AZAL Arena d'Azerbaidjan.,English lexicalisation ID: Id3; target lexicalisation ID: Id3,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.8604213297367096, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9641876220703125, ""triple_similarity"": 0.9589996337890625}"
+QA32-ES-d88fab1a3cff,QA3.2,es,Spanish,Politician,dev/2triples/Politician.xml::Id15::Id2,"Adam_Koc | battle | World_War_I
+Adam_Koc | award | Virtuti_Militari","Adam_Koc | Batalla | Primera_Guerra_Mundial
+Adam_Koc | Premio | Orden_Virtuti_Militari",Adam Koc fought in WWI and he was awarded the Virtuti Militari award.,Adam Koc luchó en la Primera Guerra Mundial y fue condecorado con la Virtuti Militari.,"Different English reference from the same RDF entry:
+Adam Koc, who won the Virtuti Militari award, fought in World War I.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.11177128553390503, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.8002333641052246, ""comparison_reference_similarity"": 0.9120046496391296, ""expansion_ratio"": 1.1538461538461537, ""extreme_advantage"": true, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA21-CA-7bb273d75e98,QA2.1,ca,Catalan,Building,train/2triples/Building.xml::Id106::Id1,"Akita_Museum_of_Art | location | Akita,_Akita
+Akita,_Akita | country | Japan","Museu_d'Art_d'Akita | Ubicació | Akita,_Akita
+Akita,_Akita | País | Japó","The Akita Museum of Art is in Akita, Akita Japan.","El Museu d'Art d'Akita es troba a Akita, Akita Japó.",English lexicalisation ID: Id1; target lexicalisation ID: Id1,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.9628920555114746, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9904923439025879, ""triple_similarity"": 0.9720172882080078}"
+QA11-CA-db9f26bc09ee,QA1.1,ca,Catalan,Food,train/4triples/Food.xml::Id164,"Bandeja_paisa | ingredient | Lemon
+Lemon | family | Rutaceae
+Bandeja_paisa | country | Colombian_cuisine
+Bandeja_paisa | region | Antioquia_Department","bandeja_paisa | Ingredient | Limó
+Limó | Família | rutàcies
+bandeja_paisa | País | gastronomia_de_Colòmbia
+bandeja_paisa | Regió | Departament_d'Antioquia","Lemons (part of the rutaceae family.) are an ingredient in Bandeja paisa, a dish from the Antioquia Department in Colombia.","Les llimones (part de la família Rutaceae) són un ingredient de la Bandeja paisa, un plat del departament d'Antioquia a Colòmbia.","Expected triples: 4; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Les llimones (part de la família Rutaceae) són un ingredient de la Bandeja paisa, un plat del departament d'Antioquia a Colòmbia.
+La bandeja paisa prové de la regió d'Antioquia de Colòmbia. Un dels seus ingredients és la llimona, que pertany a la família de les rutàcies.
+La llimona (part de la família de les rutàcies), és un ingredient de la bandeja paisa, un plat típic colombià del departament d'Antioquia.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA32-CA-693d127b4265,QA3.2,ca,Catalan,Film,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id670::Id1,Michael_Rooker | birthYear | 1955-01-01,Michael_Rooker | AnyDeNaixement | 1955-01-01,Michael Rooker was born in the year 1955.,Michael Rooker va néixer l'any 1955.,"Different English reference from the same RDF entry:
+Michael Rooker was born in 1955.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.004479646682739258, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9899770617485046, ""comparison_reference_similarity"": 0.9944567084312439, ""expansion_ratio"": 0.75, ""extreme_advantage"": false, ""extreme_expansion"": true, ""unusual_expansion"": true}"
+QA22-ES-eb42aa8c1ce9,QA2.2,es,Spanish,MeanOfTransportation,dev/3triples/MeanOfTransportation.xml::Id14::Id1,"Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company
+Alvis_Car_and_Engineering_Company | foundationPlace | Coventry
+Alvis_Car_and_Engineering_Company | successor | Rover_Company","Alvis_Speed_25 | Fabricante | Alvis
+Alvis | LugarDeCimentación | Coventry
+Alvis | Sucesor | Compañía_Rover","The Alvis Car and Engineering Company, founded in Coventry and succeeded by the Rover Company, manufactured the Alvis Speed 25.","La Alvis Car and Engineering Company, fundada en Coventry y sucedida por la Rover Company, fabricó el Alvis Speed 25.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": false, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.5277398824691772, ""minimum_triple_coverage"": 0.19156105816364288, ""target_text_literal_retention"": 1.0}"
+QA22-ES-a0470965441e,QA2.2,es,Spanish,WrittenWork,train/1triples/WrittenWork_allSolutions.xml::Id207::Id2,United_States | demonym | Americans,Estados_Unidos | Gentilicio | Estadounidense,The demonym for people living in the United States is Americans.,El gentilicio de las personas que viven en Estados Unidos es Americanos.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": false, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.5716079473495483, ""minimum_triple_coverage"": 0.5716078877449036, ""target_text_literal_retention"": null}"
+QA12-ES-946d27cdab32,QA1.2,es,Spanish,entity_or_value,Almond,,,,,"Observed target forms and counts: {""almendra"": 51, ""prunus amygdalus"": 1}
+Example mappings:
+dev/2triples/Food.xml::Id2: Almond → Prunus_amygdalus
+train/1triples/Food_allSolutions.xml::Id2: Almond → Almendra
+train/1triples/Food_allSolutions.xml::Id8: Almond → Almendra
+train/1triples/Food_allSolutions.xml::Id9: Almond → Almendra",Medium,"Multiple target forms are observed, but one form remains strongly dominant.","{""dominant_mapping_rate"": 0.9807692307692307, ""mapping_review_signal"": true, ""occurrences"": 52, ""target_form_count"": 2}"
+QA21-CA-a981fc247848,QA2.1,ca,Catalan,CelestialBody,train/4triples/CelestialBody.xml::Id81::Id2,"1089_Tama | epoch | 2005-11-26
+1089_Tama | formerName | ""A919 HA; 1927 WB;""
+1089_Tama | orbitalPeriod | 1202.846 (days)
+1089_Tama | periapsis | 288749000000.0","(1089)_Tama | Època | 2005-11-26
+(1089)_Tama | AnteriorNom | A919_HA;_1927_WB;
+(1089)_Tama | PeríodeOrbital | 1202.846_(dies)
+(1089)_Tama | Periàpside | 288749000000.0","1089 Tama (previously A919 HA; 1927 WB) has; an orbital period of 1202.846 days, a periapsis of 288749000000.0, and the epoch date 2005-11-26.","1089 Tama (anteriorment A919 HA; 1927 WB) té un període orbital de 1202.846 dies, un periapside de 288749000000.0, i una data d'època de 2005-11-26.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,High,source literal preservation is below 1.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.6874996423721313, ""source_target_literal_preservation"": 0.8571428571428571, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9320275187492371, ""triple_similarity"": 0.8533084392547607}"
+QA12-ES-789ebc58fcba,QA1.2,es,Spanish,entity_or_value,Central_Denmark_Region,,,,,"Observed target forms and counts: {""dinamarca central"": 1, ""jutlandia central"": 19}
+Example mappings:
+train/1triples/Airport_allSolutions.xml::Id280: Central_Denmark_Region → Jutlandia_Central
+train/2triples/Airport.xml::Id3: Central_Denmark_Region → Dinamarca_Central
+train/3triples/Airport.xml::Id7: Central_Denmark_Region → Jutlandia_Central
+train/3triples/Airport.xml::Id8: Central_Denmark_Region → Jutlandia_Central",Medium,"Multiple target forms are observed, but one form remains strongly dominant.","{""dominant_mapping_rate"": 0.95, ""mapping_review_signal"": true, ""occurrences"": 20, ""target_form_count"": 2}"
+QA11-ES-efe0e27ede03,QA1.1,es,Spanish,Food,train/1triples/Food_allSolutions.xml::Id215,Malaysia | ethnicGroup | Malaysian_Indian,Malasia | GrupoÉtnico | Indio_malayo,Malaysian Indian is one of the ethnic groups on Malaysia.,El indio malayo es uno de los grupos étnicos de Malasia.,"Expected triples: 1; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: El indio malayo es uno de los grupos étnicos de Malasia.
+Uno de los grupos étnicos de Malasia es el indio malayo.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA22-ES-707f5334a615,QA2.2,es,Spanish,SportsTeam,train/3triples/SportsTeam.xml::Id10::Id2,"1._FC_Magdeburg | manager | Jens_Härtel
+Jens_Härtel | club | 1._FC_Lokomotive_Leipzig
+Jens_Härtel | club | SV_Babelsberg_03","1._FC_Magdeburg | Director | Jens_Härtel
+Jens_Härtel | Club | Lokomotive_Leipzig
+Jens_Härtel | Club | SV_Babelsberg_03","FC Magdeburg manager Jens Hartel is a former professional who first played for FC Lokomotive Leipzig, and later, for SV Babelsberg 03.","El entrenador del FC Magdeburgo, Jens Hartel, es un antiguo profesional que primero jugó en el FC Lokomotive Leipzig y, más tarde, en el SV Babelsberg 03.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,target literal retention is below 1.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6300983428955078, ""minimum_triple_coverage"": 0.5130361318588257, ""target_text_literal_retention"": 0.5}"
+QA11-ES-7b390dd21c79,QA1.1,es,Spanish,City,train/1triples/City_allSolutions.xml::Id85,"Anderson,_Indiana | isPartOf | Madison_County,_Indiana","Anderson | FormaParteDe | Condado_de_Madison,_Indiana",Anderson in Madison County is in Indiana.,"Anderson, en el condado de Madison, está en Indiana.","Expected triples: 1; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Anderson, en el condado de Madison, está en Indiana.
+Anderson se encuentra en el condado de Madison, Indiana.
+Anderson forma parte del condado de Madison, Indiana.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA21-ES-aa3e14a7470c,QA2.1,es,Spanish,Company,train/2triples/Company.xml::Id61::Id3,"Hypermarcas | type | S.A._(corporation)
+Hypermarcas | product | Healthcare","Hipermarcas | Tipo | sociedad_anónima
+Hipermarcas | Producto | Sanidad",Hypermarcas is a S.A corporation that sells healthcare products.,Hypermarcas es una sociedad anónima dedicada a la venta de productos sanitarios.,English lexicalisation ID: Id3; target lexicalisation ID: Id3,High,at least two semantic scores are in the lowest 5%.,"{""below_10_percent"": [""text_similarity"", ""triple_similarity""], ""below_1_percent"": [], ""below_5_percent"": [""text_similarity"", ""triple_similarity""], ""predicate_similarity"": 0.8236875236034393, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.7511117458343506, ""triple_similarity"": 0.6931402087211609}"
+QA11-CA-45a10c9fb107,QA1.1,ca,Catalan,Building,train/5triples/Building.xml::Id62,"Adare_Manor | architect | Augustus_Pugin
+Augustus_Pugin | significantBuilding | Palace_of_Westminster
+Augustus_Pugin | birthPlace | Bloomsbury
+County_Limerick | isPartOf | Munster
+Adare_Manor | location | County_Limerick","Adare_Manor | Arquitecte | Augustus_Welby_Northmore_Pugin
+Augustus_Welby_Northmore_Pugin | EdificiSignificatiu | Palau_de_Westminster
+Augustus_Welby_Northmore_Pugin | LlocDeNaixement | Bloomsbury
+comtat_de_Limerick | ÉsPartDe | Munster
+Adare_Manor | Ubicació | comtat_de_Limerick",Augustus Pugin (born in Bloomsbury) was the architect of Adare Manor and the Palace of Westminster. Adare Manor is located in County Limerick which is part of Munster.,Augustus Pugin (nascut a Bloomsbury) va ser l'arquitecte de Adare Manor i el Palau de Westminster. Adare Manor es troba al Comtat de Limerick que forma part de Munster.,"Expected triples: 5; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: Augustus Pugin (nascut a Bloomsbury) va ser l'arquitecte de Adare Manor i el Palau de Westminster. Adare Manor es troba al Comtat de Limerick que forma part de Munster.
+L'arquitecte Augustus Pugin va néixer a Bloomsbury. Va dissenyar el Palau de Westminster i Adare Manor al comtat de Limerick, Munster.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA12-ES-d8b37fe04d09,QA1.2,es,Spanish,entity_or_value,Tomato,,,,,"Observed target forms and counts: {""solanum lycopersicum"": 2, ""tomate"": 40}
+Example mappings:
+dev/2triples/Food.xml::Id3: Tomato → Solanum_lycopersicum
+dev/2triples/Food.xml::Id8: Tomato → Solanum_lycopersicum
+train/1triples/Food_allSolutions.xml::Id19: Tomato → Tomate
+train/1triples/Food_allSolutions.xml::Id35: Tomato → Tomate",Medium,"Multiple target forms are observed, but one form remains strongly dominant.","{""dominant_mapping_rate"": 0.9523809523809523, ""mapping_review_signal"": true, ""occurrences"": 42, ""target_form_count"": 2}"
+QA21-CA-fcbb6d56d5c4,QA2.1,ca,Catalan,WrittenWork,dev/3triples/WrittenWork.xml::Id3::Id1,"1634:_The_Ram_Rebellion | author | Eric_Flint
+1634:_The_Ram_Rebellion | mediaType | E-book
+1634:_The_Ram_Rebellion | numberOfPages | ""512""","1634:_La_rebel·lió_de_Ram | Autor | Eric_Flint
+1634:_La_rebel·lió_de_Ram | TipusDeMitjans | Llibre_electrònic
+1634:_La_rebel·lió_de_Ram | NombreDePàgines | 512",Eric Flint is the author of 1634: The Ram Rebellion which has 512 pages and is available as an E-Book.,Eric Flint és l'autor de 1634: The Ram Rebellion que té 512 pàgines i està disponible com a llibre electrònic.,English lexicalisation ID: Id1; target lexicalisation ID: Id1,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.5710605084896088, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9898500442504883, ""triple_similarity"": 0.9448132514953613}"
+QA21-CA-1880373b0151,QA2.1,ca,Catalan,Food,train/1triples/Food_allSolutions.xml::Id25::Id2,"Arem-arem | course | ""Main course""",Arem-arem | Cors | plat_principal,Arem arem is a main course.,Arem arem és un plat principal.,English lexicalisation ID: Id2; target lexicalisation ID: Id2,High,a semantic score is in the lowest 1%; at least two semantic scores are in the lowest 5%.,"{""below_10_percent"": [""text_similarity"", ""triple_similarity""], ""below_1_percent"": [""text_similarity""], ""below_5_percent"": [""text_similarity"", ""triple_similarity""], ""predicate_similarity"": 0.7073517441749573, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.25997495651245117, ""triple_similarity"": 0.754732608795166}"
+QA11-ES-a39c9ac4cab9,QA1.1,es,Spanish,Airport,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id779,"Bedford_Aerodrome | runwayLength | 1095.0
+Bedford_Aerodrome | cityServed | Bedford_Autodrome
+Bedford_Aerodrome | location | Thurleigh","Aeródromo_de_Bedford | LongitudDeLaPista | 1095.0
+Aeródromo_de_Bedford | CiudadServida | Autódromo_de_Bedford
+Aeródromo_de_Bedford | Ubicación | Thurleigh",The runway length at the Bedford Aerodrome in Thurleigh is 1095 and the aerodrome serves the Bedford Autodrome.,"La longitud de la pista del aeródromo de Bedford, en Thurleigh, es de 1095 y el aeródromo da servicio al Bedford Autodrome.","Expected triples: 3; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: La longitud de la pista del aeródromo de Bedford, en Thurleigh, es de 1095 y el aeródromo da servicio al Bedford Autodrome.
+La longitud de la pista del aeródromo de Bedford (al que da servicio el Bedford Autodrome) en Thurleigh mide 1095,0.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA21-CA-14870e9d8c70,QA2.1,ca,Catalan,Food,train/2triples/Food.xml::Id62::Id2,"Asam_pedas | country | Malaysia
+Asam_pedas | mainIngredient | ""Fish cooked in sour and hot sauce""","Asam_pedas | País | Malàisia
+Asam_pedas | PrincipalIngredient | Peix_cuinat_en_salsa_agre_i_picant","Asam pedas is a food found in Malaysia, and it is a dish of fish cooked in a sour and hot sauce.","L'asam pedas és un aliment que es troba a Malàisia, i és un plat de peix cuinat en una salsa agria i picant.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""text_similarity""], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.5694704577326775, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.855035662651062, ""triple_similarity"": 0.8774394989013672}"
+QA32-CA-f9586f761c93,QA3.2,ca,Catalan,WrittenWork,train/4triples/WrittenWork.xml::Id108::Id1,"Alcatraz_Versus_the_Evil_Librarians | language | English_language
+English_language | spokenIn | Great_Britain
+United_States | ethnicGroup | White_Americans
+Alcatraz_Versus_the_Evil_Librarians | country | United_States","Alcatraz_contra_els_malvats_bibliotecaris | Llengua | Llengua_anglesa
+Llengua_anglesa | ParlatEn | Gran_Bretanya
+Estats_Units_d'Amèrica | GrupÈtnic | blancs_estatunidencs
+Alcatraz_contra_els_malvats_bibliotecaris | País | Estats_Units_d'Amèrica",Alcatraz Versus the Evil Librarians is written in English which is the language spoken in Great Britain. It originates from the United States where White Americans live.,"Alcatraz Versus the Evil Librarians està escrit en anglès, que és la llengua parlada a Gran Bretanya. És originari dels Estats Units, on viuen els blancs americans.","Different English reference from the same RDF entry:
+The book Alcatraz Versus the Evil Librarians is written in English, the language spoken in Great Britain. The book come from the US, where White Americans are an ethnic group.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.0562739372253418, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9843096137046814, ""comparison_reference_similarity"": 0.9280356764793396, ""expansion_ratio"": 1.0, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA32-ES-4c6adfa3a58d,QA3.2,es,Spanish,Politician,dev/2triples/Politician.xml::Id9::Id1,"Abner_W._Sibal | militaryBranch | United_States_Army
+Abner_W._Sibal | battle | World_War_II","Abner_W._Sibal | RamaMilitar | Ejército_de_los_Estados_Unidos
+Abner_W._Sibal | Batalla | Segunda_Guerra_Mundial",Abner W. Sibal was in the U.S. Army during WWII.,Abner W. Sibal estuvo en el ejército estadounidense durante la Segunda Guerra Mundial.,"Different English reference from the same RDF entry:
+Abner W Sibal served in the United States Army and fought in World War II.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": -0.015828073024749756, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9364267587661743, ""comparison_reference_similarity"": 0.9522548317909241, ""expansion_ratio"": 1.3, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA32-ES-9a60650e49ab,QA3.2,es,Spanish,Airport,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id891::Id3,"Bedford_Aerodrome | operatingOrganisation | MotorSport_Vision
+Bedford_Aerodrome | location | Thurleigh","Aeródromo_de_Bedford | OrganizaciónOperativa | MotorSport_Vision
+Aeródromo_de_Bedford | Ubicación | Thurleigh",The Bedford Aerodrome is located in Thurleigh and has an operating organization that is called the MotorSport Vision.,El aeródromo de Bedford está situado en Thurleigh y cuenta con una organización operativa que se llama MotorSport Vision.,"Different English reference from the same RDF entry:
+MotorSport Vision operates the Bedford Aerodrome located in Thurleigh.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.010777771472930908, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9843648076057434, ""comparison_reference_similarity"": 0.9735870361328125, ""expansion_ratio"": 1.0555555555555556, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA32-CA-26637768e9d6,QA3.2,ca,Catalan,MeanOfTransportation,dev/1triples/MeanOfTransportation_allSolutions.xml::Id21::Id2,Antares_(rocket) | finalFlight | 2014-10-28,Antares_(coet) | VolFinal | 2014-10-28,The final flight of the Antares rocket was on 2014-10-28.,El vol final del coet Antares va ser el 28 d'octubre de 2014.,"Different English reference from the same RDF entry:
+The Antares rocket's final flight was on the 28th October 2014.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.09443986415863037, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.8342732191085815, ""comparison_reference_similarity"": 0.9287130832672119, ""expansion_ratio"": 1.3, ""extreme_advantage"": true, ""extreme_expansion"": false, ""unusual_expansion"": true}"
+QA11-ES-5f6294857dba,QA1.1,es,Spanish,CelestialBody,train/2triples/CelestialBody.xml::Id44,"1001_Gaussia | epoch | 2015-06-27
+1001_Gaussia | rotationPeriod | 33012.0","(1001)_Gaussia | Época | 27-06-2015
+(1001)_Gaussia | PeríodoDeRotación | 33012.0",1001 Gaussia has a rotation period of 33012.0 and an epoch date of 31 July 2016.,"1001 Gaussia tiene un periodo de rotación de 33012,0 y una fecha de época del 31 de julio de 2016.","Expected triples: 2; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: 1001 Gaussia tiene un periodo de rotación de 33012,0 y una fecha de época del 31 de julio de 2016.
+La fecha de la época de 1001 Gaussia es el 27 de junio de 2015 y tiene un período de rotación de 33012,0.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA31-CA-d5c7e68dbb17,QA3.1,ca,Catalan,WrittenWork,train/1triples/WrittenWork_allSolutions.xml::Id187::Id1,John_Cowper_Powys | notableWork | Porius:_A_Romance_of_the_Dark_Ages,John_Cowper_Powys | ObraNotable | Porius:_un_romanç_de_l'edat_fosca,A notable work of John Cowper Powys is Porius: A Romance of the Dark Ages.,Una obra notable de John Cowper Powys és Porius: A Romance of the Dark Ages.,Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""ca"", ""target_language_probability"": 0.4834851622581482, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA21-CA-16d24082c483,QA2.1,ca,Catalan,Politician,train/1triples/Politician_allSolutions.xml::Id10::Id2,Aaron_S._Daggett | battle | Battle_of_the_Wilderness,Aaron_Smith_Daggett | Batalla | batalla_de_Wilderness,Aaron S. Daggett fought in the Battle of the Wilderness.,Aaron S. Daggett va lluitar a la Batalla de la Selva.,English lexicalisation ID: Id2; target lexicalisation ID: Id2,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""text_similarity""], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.9917100071907043, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.8450649976730347, ""triple_similarity"": 0.8901959657669067}"
+QA32-CA-90b99642cae1,QA3.2,ca,Catalan,MeanOfTransportation,train/1triples/MeanOfTransportation_allSolutions.xml::Id111::Id3,Aleksey_Chirikov_(icebreaker) | builder | Finland,Aleksey_Chirikov_(trencaglaç) | Constructor | Finlàndia,The icebreaker ship Aleksey Chirikov was built in Finland.,El trencaglaç Aleksey Chirikov va ser construït a Finlàndia.,"Different English reference from the same RDF entry:
+Finland is the builder of the icebreaker called the Aleksey Chirikov.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.011710047721862793, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.8899191617965698, ""comparison_reference_similarity"": 0.878209114074707, ""expansion_ratio"": 1.0, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA12-CA-bff776b72741,QA1.2,ca,Catalan,entity_or_value,Asilomar_State_Beach,,,,,"Observed target forms and counts: {""asilomar state beach"": 15}
+Example mappings:
+dev/4triples/Building.xml::Id20: Asilomar_State_Beach → Asilomar_State_Beach
+train/1triples/Building_allSolutions.xml::Id194: Asilomar_State_Beach → Asilomar_State_Beach
+train/2triples/Building.xml::Id137: Asilomar_State_Beach → Asilomar_State_Beach
+train/3triples/Building.xml::Id153: Asilomar_State_Beach → Asilomar_State_Beach",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 15, ""target_form_count"": 1}"
+QA11-CA-bbef8ea8a5e3,QA1.1,ca,Catalan,Food,train/2triples/Food.xml::Id64,"Asam_pedas | country | Malaysia
+Asam_pedas | region | Malay_Peninsula","Asam_pedas | País | Malàisia
+Asam_pedas | Regió | península_de_Malaca","Asam pedas is a food found in the Malay Peninsula, Malaysia.","Asam pedas és un aliment que es troba a la península Malaia, Malàisia.","Expected triples: 2; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Asam pedas és un aliment que es troba a la península Malaia, Malàisia.
+Asam pedas és un aliment que es troba a Malàisia que prové de la regió de la península de Malàisia.
+Asam pedas és un aliment que es troba a la península Malaia a Malàisia.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA32-ES-de58cd98db32,QA3.2,es,Spanish,SportsTeam,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1268::Id3,"Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C
+Campeonato_Brasileiro_Série_C | country | Brazil
+Agremiação_Sportiva_Arapiraquense | numberOfMembers | 17000
+Agremiação_Sportiva_Arapiraquense | fullName | ""Agremiação Sportiva Arapiraquense""","Agremiação_Sportiva_Arapiraquense | Liga | Campeonato_Brasileño_de_Serie_C
+Campeonato_Brasileño_de_Serie_C | País | Brasil
+Agremiação_Sportiva_Arapiraquense | NúmeroDeMiembros | 17000
+Agremiação_Sportiva_Arapiraquense | NombreCompleto | Agremiação_Sportiva_Arapiraquense",The Agremiacao Sportiva Arapiraquense 'Agremiacao Sportiva Arapiraquense' have 17000 members and play in the Campeonato Brasileiro Serie C league from Brazil.,El Agremiacao Sportiva Arapiraquense 'Agremiacao Sportiva Arapiraquense' tiene 17000 socios y juega en la liga Campeonato Brasileiro Serie C de Brasil.,"Different English reference from the same RDF entry:
+Agremiação Sportiva Arapiraquense's full name is ""Agremiação Sportiva Arapiraquense"" and the club has 17000 members. They play in the Campeonato Brasileiro Série C league which is based in Brazil.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.059203386306762695, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9529145359992981, ""comparison_reference_similarity"": 0.8937111496925354, ""expansion_ratio"": 1.0, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA32-CA-f9027daa4751,QA3.2,ca,Catalan,Building,train/1triples/Building_allSolutions.xml::Id163::Id2,Denmark | language | German_language,Dinamarca | Llengua | Idioma_alemany,One of the languages used in Denmark is the German language.,Una de les llengües utilitzades a Dinamarca és l'alemany.,"Different English reference from the same RDF entry:
+One of the languages in Denmark is German.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": -0.009296894073486328, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9787547588348389, ""comparison_reference_similarity"": 0.9880516529083252, ""expansion_ratio"": 0.8181818181818182, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": true}"
+QA21-ES-c8e94ca67f2d,QA2.1,es,Spanish,Artist,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1557::Id3,"Aaron_Turner | genre | Post-metal
+Aaron_Turner | associatedBand/associatedMusicalArtist | Lotus_Eaters_(band)
+Aaron_Turner | instrument | Singing
+Aaron_Turner | origin | United_States
+Aaron_Turner | activeYearsStartYear | 1995","Aaron_Turner | Género | Post-metal
+Aaron_Turner | BandaAsociada/artistaMusicalAsociado | Lotus_Eaters_(banda)
+Aaron_Turner | Instrumento | canto
+Aaron_Turner | Origen | Estados_Unidos
+Aaron_Turner | AñosActivosAñoDeInicio | 1995",Aaron Turner was a post-metal singer born in the the United States who started performing in 1995 and is in the Lotus Eaters band.,Aaron Turner es un cantante de Post-metal nacido en Estados Unidos que empezó a actuar en 1995 y forma parte de la banda Lotus Eaters.,English lexicalisation ID: Id3; target lexicalisation ID: Id3,Low,No literal failure or lower-tail semantic review condition is present.,"{""below_10_percent"": [], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.793935751914978, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9810457229614258, ""triple_similarity"": 0.9243765473365784}"
+QA32-ES-5f80bc45899d,QA3.2,es,Spanish,WrittenWork,train/1triples/WrittenWork_allSolutions.xml::Id216::Id1,Weymouth_Sands | followedBy | Maiden_Castle_(novel),Arenas_de_Weymouth | SeguidoDe | Castillo_de_la_Doncella_(novela),Maiden Castle (novel) was preceded by Weymouth Sands.,Maiden Castle (novela) fue precedida por Weymouth Sands.,"Different English reference from the same RDF entry:
+The novel Maiden Castle followed the novel Weymouth Sands.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.10441148281097412, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9919816255569458, ""comparison_reference_similarity"": 0.8875701427459717, ""expansion_ratio"": 1.0, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA21-ES-47231211c8ac,QA2.1,es,Spanish,City,dev/1triples/City_allSolutions.xml::Id9::Id2,"Amarillo,_Texas | isPartOf | Potter_County,_Texas","Amarillo,_Texas | FormaParteDe | Condado_de_Potter,_Texas","Amarillo is part of Potter County, Texas.","Amarillo es parte del condado de Potter, Texas.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,Medium,at least one semantic score is in the lowest 10%.,"{""below_10_percent"": [""text_similarity"", ""predicate_similarity""], ""below_1_percent"": [], ""below_5_percent"": [], ""predicate_similarity"": 0.5240179896354675, ""source_target_literal_preservation"": null, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.8990778923034668, ""triple_similarity"": 0.9297398328781128}"
+QA32-CA-6b0dcea21d67,QA3.2,ca,Catalan,Airport,train/3triples/Airport.xml::Id109::Id1,"Andrews_County_Airport | location | Texas
+Texas | language | Spanish_language
+Texas | capital | Austin,_Texas","Aeroport_del_comtat_d'_Andrews | Ubicació | Texas
+Texas | Llengua | Llengua_espanyola
+Texas | Capital | Austin,_Texas","Spanish is the language spoken in Austin, Texas (in which the Andrews County Airport is located).","L'espanyol és la llengua parlada a Austin, Texas (on es troba l'Aeroport del Comtat d'Andrews).","Different English reference from the same RDF entry:
+Andrews County Airport is located in Texas whose capital is Austin. Spanish is one language spoken there.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.09324413537979126, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9498467445373535, ""comparison_reference_similarity"": 0.8566026091575623, ""expansion_ratio"": 0.9375, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA31-CA-04cccf2ced14,QA3.1,ca,Catalan,Artist,dev/3triples/Artist.xml::Id31::Id2,"Armin_van_Buuren | genre | House_music
+Andrew_Rayel | associatedBand/associatedMusicalArtist | Armin_van_Buuren
+Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine","Armin_van_Buuren | Gènere | house
+Andrew_Rayel | BandaAssociada/artistaMusicalAssociat | Armin_van_Buuren
+Andrew_Rayel | BandaAssociada/artistaMusicalAssociat | Jwaydan_Moyine","Andrew Rayel is associated with the musician Jwaydan Moyine and house musician, Armin van Buuren.","Andrew Rayel està associat amb el músic Jwaydan Moyine i el músic house, Armin van Buuren.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Low,The expected target language is confidently predicted and no hard flag is active.,"{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.8152254223823547, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA31-CA-34aa9c807c11,QA3.1,ca,Catalan,Building,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id169::Id2,"Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business
+Alan_B._Miller_Hall | location | Williamsburg,_Virginia
+Alan_B._Miller_Hall | owner | College_of_William_&_Mary","Alan_B._Miller_Hall | LlogatersActuals | Escola_Mason_de_Negocis
+Alan_B._Miller_Hall | Ubicació | Williamsburg,_Virgínia
+Alan_B._Miller_Hall | Propietari | College_of_William_and_Mary","The Mason School of Business, inside Alan B Miller Hall, is in Williamsburg, Virginia at the College of William and Mary.","La Mason School of Business, dins de l'Alan B Miller Hall, es troba a Williamsburg, Virgínia, al College of William and Mary.",Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""ca"", ""target_language_probability"": 0.6506980061531067, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA31-ES-c662d1890bbf,QA3.1,es,Spanish,Artist,dev/4triples/Artist.xml::Id22::Id3,"Anders_Osborne | associatedBand/associatedMusicalArtist | Billy_Iuso
+Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit
+Anders_Osborne | genre | Rock_music
+Anders_Osborne | associatedBand/associatedMusicalArtist | Voice_of_the_Wetlands_All-Stars","Anders_Osborne | BandaAsociada/artistaMusicalAsociado | Billy_Iuso
+Anders_Osborne | BandaAsociada/artistaMusicalAsociado | Tab_Benoit
+Anders_Osborne | Género | rock
+Anders_Osborne | BandaAsociada/artistaMusicalAsociado | La_voz_de_las_estrellas_de_los_humedales","Exponent of rock music Anders Osborne, who has worked with Tab Benoit is associated with the musical artist Billy Iuso and the Voice of the Wetlands All-Stars.","Exponente de la música rock, Anders Osborne, que ha trabajado con Tab Benoit, está asociado al artista musical Billy Iuso y a Voice of the Wetlands All-Stars.",Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""es"", ""target_language_probability"": 0.8237869739532471, ""valid_target_language"": true, ""wrong_language_detected"": false}"
+QA12-CA-9701ba89fba2,QA1.2,ca,Catalan,entity_or_value,Sovcomflot,,,,,"Observed target forms and counts: {""sovcomflot"": 4}
+Example mappings:
+train/1triples/MeanOfTransportation_allSolutions.xml::Id114: Sovcomflot → Sovcomflot
+train/1triples/MeanOfTransportation_allSolutions.xml::Id283: Sovcomflot → Sovcomflot
+train/2triples/MeanOfTransportation.xml::Id206: Sovcomflot → Sovcomflot",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 4, ""target_form_count"": 1}"
+QA22-ES-1406384dd956,QA2.2,es,Spanish,Athlete,dev/2triples/Athlete.xml::Id11::Id2,"Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.
+Alan_Martin_(footballer) | club | Barrow_A.F.C.","Alan_Martin_(futbolista) | Club | Hamilton_Academical_Football_Club
+Alan_Martin_(futbolista) | Club | Barrow_AFC",Alan Martin plays for Hamilton Academical F.C. and Barrow A.F.C.,Alan Martin juega en el Hamilton Academical F.C. y en el Barrow A.F.C.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.5300312638282776, ""minimum_triple_coverage"": 0.5809270143508911, ""target_text_literal_retention"": null}"
+QA32-CA-0479eb54992e,QA3.2,ca,Catalan,Building,train/1triples/Building_allSolutions.xml::Id117::Id1,"Ampara_Hospital | state | Eastern_Province,_Sri_Lanka","Hospital_d'Ampara | Estat | Província_oriental,_Sri_Lanka","Ampara Hospital is in Eastern Province, Sri Lanka.",L'hospital d'Ampara es troba a la província oriental de Sri Lanka.,"Different English reference from the same RDF entry:
+Ampara Hospital is in the Eastern Province, Sri Lanka.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": 0.0036886930465698242, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9153182506561279, ""comparison_reference_similarity"": 0.9116295576095581, ""expansion_ratio"": 1.375, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": true}"
+QA22-ES-fb0d71fc54da,QA2.2,es,Spanish,WrittenWork,dev/1triples/WrittenWork_allSolutions.xml::Id17::Id2,Administrative_Science_Quarterly | LCCN_number | 57059226,Administration_Science_Quarterly | LCCNNúmero | 57059226,Administrative Science Quarterly's LLCN number is 57059226.,El número LLCN de Ciencia Administrativa Trimestral es 57059226.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": false, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.5353153944015503, ""minimum_triple_coverage"": 0.5353153944015503, ""target_text_literal_retention"": 1.0}"
+QA22-CA-fe32c5fbd02a,QA2.2,ca,Catalan,Athlete,train/1triples/Athlete_allSolutions.xml::Id13::Id1,Aaron_Hunt | birthPlace | Goslar,Aaron_Hunt | LlocDeNaixement | Goslar,Aaron Hunt was born in Goslar.,Aaron Hunt va néixer a Goslar.,Judge the target text only against the target triples; the English pair is supplied as alignment context.,High,both English-calibrated support directions fail.,"{""coverage_pass"": false, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.47969892621040344, ""minimum_triple_coverage"": 0.47969889640808105, ""target_text_literal_retention"": null}"
+QA12-CA-1566b3d679e3,QA1.2,ca,Catalan,entity_or_value,1998,,,,,"Observed target forms and counts: {""1998"": 5}
+Example mappings:
+dev/1triples/Artist_allSolutions.xml::Id1: 1998 → 1998
+train/3triples/Artist.xml::Id2: 1998 → 1998
+train/4triples/Artist.xml::Id4: 1998 → 1998
+train/5triples/Artist.xml::Id1: 1998 → 1998",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 5, ""target_form_count"": 1}"
+QA12-CA-51abb9b3a571,QA1.2,ca,Catalan,entity_or_value,2009-04-04,,,,,"Observed target forms and counts: {""2009-04-04"": 10}
+Example mappings:
+train/1triples/MeanOfTransportation_allSolutions.xml::Id30: 2009-04-04 → 2009-04-04
+train/2triples/MeanOfTransportation.xml::Id24: 2009-04-04 → 2009-04-04
+train/3triples/MeanOfTransportation.xml::Id22: 2009-04-04 → 2009-04-04
+train/3triples/MeanOfTransportation.xml::Id24: 2009-04-04 → 2009-04-04",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 10, ""target_form_count"": 1}"
+QA32-CA-7e13d56fda5a,QA3.2,ca,Catalan,University,train/4triples/University.xml::Id62::Id1,"School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association
+School of Business and Social Sciences at the Aarhus University | city | Aarhus
+European_University_Association | headquarter | Brussels
+School of Business and Social Sciences at the Aarhus University | country | Denmark","Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | Afiliació | Associació_d'Universitats_Europees
+Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | Ciutat | Aarhus
+Associació_d'Universitats_Europees | QuarterGeneral | Brussel·les
+Escola_d'Empreses_i_Ciències_Socials_de_la_Universitat_d'Aarhus | País | Dinamarca","The School of Business and Social Sciences at the Aarhus University in the city of Aarhus, Denmark is affiliated with the European University Association which has its headquarters in Brussels.","L'Escola de Negocis i Ciències Socials de la Universitat d'Aarhus a la ciutat d'Aarhus, Dinamarca, està afiliada a l'Associació Universitària Europea que té la seva seu a Brussel·les.","Different English reference from the same RDF entry:
+The School of Business and Social Sciences (Aarhus, Denmark) is affiliated with the European University Association, which has its headquarters in Brussels.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.17051100730895996, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.7915046215057373, ""comparison_reference_similarity"": 0.9620156288146973, ""expansion_ratio"": 0.9333333333333333, ""extreme_advantage"": true, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA32-ES-8c94a4837a54,QA3.2,es,Spanish,Company,train/1triples/Company_allSolutions.xml::Id41::Id1,Insular_Government_of_the_Philippine_Islands | foundingDate | 1901-07-01,Gobierno_Insular_de_las_Islas_Filipinas | FechaDeFundación | 01-07-1901,The Insular Government of the Philippine Islands was founded on 1901-07-01.,El Gobierno Insular de las Islas Filipinas se fundó el 1 de julio de 1901.,"Different English reference from the same RDF entry:
+The Insular Government of the Philippine Islands was established on July 1, 1901.",High,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.","{""aligned_reference_advantage"": -0.057492852210998535, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9216187000274658, ""comparison_reference_similarity"": 0.9791115522384644, ""expansion_ratio"": 1.3636363636363635, ""extreme_advantage"": true, ""extreme_expansion"": false, ""unusual_expansion"": true}"
+QA11-CA-3710db26cbe1,QA1.1,ca,Catalan,Artist,train/2triples/Artist.xml::Id29,"Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)
+Aaron_Turner | associatedBand/associatedMusicalArtist | Old_Man_Gloom","Aaron_Turner | BandaAssociada/artistaMusicalAssociat | Twilight_(grup)
+Aaron_Turner | BandaAssociada/artistaMusicalAssociat | L'home_vell_sombria",Aaron Turner played for Old Man Gloom and the band Twilight.,Aaron Turner va tocar per a Old Man Gloom i la banda Twilight.,"Expected triples: 2; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Aaron Turner va tocar per a Old Man Gloom i la banda Twilight.
+Aaron Turner va tocar amb les bandes Twilight i Old Man Gloom.
+Aaron Turner va tocar amb la banda Twilight i per a Old Man Gloom.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA21-ES-0398e86d7052,QA2.1,es,Spanish,Film,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1761::Id2,"English_Without_Tears | runtime | 89.0
+English_Without_Tears | musicComposer | Nicholas_Brodszky
+English_Without_Tears | releaseDate | 1944-07-28","Amor_en_seis_lecciones | TiempoDeEjecución | 89.0
+Amor_en_seis_lecciones | CompositorMusical | Nicholas_Brodzsky
+Amor_en_seis_lecciones | FechaDePublicación | 28-07-1944","The 89 minute film, English Without Tears, released on July 1944, was composed by Nicholas Brodszky.","La película English Without Tears (Inglés sin lágrimas), de 89 minutos de duración y estrenada en julio de 1944, fue compuesta por Nicholas Brodszky.",English lexicalisation ID: Id2; target lexicalisation ID: Id2,High,a semantic score is in the lowest 1%.,"{""below_10_percent"": [""triple_similarity""], ""below_1_percent"": [""triple_similarity""], ""below_5_percent"": [""triple_similarity""], ""predicate_similarity"": 0.6513532598813375, ""source_target_literal_preservation"": 1.0, ""structured_predicate_review_flag"": false, ""text_similarity"": 0.9567795991897583, ""triple_similarity"": 0.6057777404785156}"
+QA22-ES-21c8bc7bcd93,QA2.2,es,Spanish,MusicalWork,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id863::Id1,"Mermaid_(Train_song) | genre | Reggae
+Imagine_(John_Lennon_song) | followedBy | Happy_Xmas_(War_Is_Over)
+Mermaid_(Train_song) | followedBy | Imagine_(John_Lennon_song)
+Imagine_(John_Lennon_song) | genre | Pop_music","Mermaid_(canción_de_Train) | Género | reggae
+Imagine_(canción_de_John_Lennon) | SeguidoDe | Happy_Xmas_(War_Is_Over)
+Mermaid_(canción_de_Train) | SeguidoDe | Imagine_(canción_de_John_Lennon)
+Imagine_(canción_de_John_Lennon) | Género | pop",The song Mermaid by Train is written in the reggae music genre and was followed by the band’s cover of the John Lennon song Imagine. The original version of Imagine is in the pop music genre and was followed up by Lennon’s hit Happy Xmas (War is Over).,La canción Mermaid de Train pertenece al género musical reggae y fue seguida por la versión del grupo de la canción Imagine de John Lennon. La versión original de Imagine pertenece al género pop y fue seguida por el éxito de Lennon Happy Xmas (War is Over).,Judge the target text only against the target triples; the English pair is supplied as alignment context.,Low,Coverage and groundedness pass; no target literal failure is observed.,"{""coverage_pass"": true, ""groundedness_pass"": true, ""minimum_text_groundedness"": 0.6168889999389648, ""minimum_triple_coverage"": 0.47698843479156494, ""target_text_literal_retention"": null}"
+QA11-ES-df7a8e1304d7,QA1.1,es,Spanish,Food,train/1triples/Food_allSolutions.xml::Id133,Batchoy | ingredient | Noodle,Batchoy | Ingrediente | fideo,Noodles are an ingredient in batchoy.,Los fideos son un ingrediente del Batchoy.,Expected triples: 1; English IDs: Id1; Target IDs: Id1; Target lexicalisations in entry: Los fideos son un ingrediente del Batchoy.,Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA22-CA-2b9f52e7b144,QA2.2,ca,Catalan,Artist,train/4triples/Artist.xml::Id61::Id1,"Ahmet_Ertegun | genre | Rock_and_roll
+Ahmet_Ertegun | origin | Washington,_D.C.
+Ahmet_Ertegun | background | ""non_performing_personnel""
+Ahmet_Ertegun | origin | United_States","Ahmet_Ertegun | Gènere | rock_and_roll
+Ahmet_Ertegun | Origen | Washington_DC
+Ahmet_Ertegun | Antecedents | personal_no_executiu
+Ahmet_Ertegun | Origen | Estats_Units_d'Amèrica","Ahmet Ertegun originates from Washington D.C. in the United States. He has a non-performing background, but can play rock and roll music.","Ahmet Ertegun és originari de Washington D.C. als Estats Units. No té experiència en actuacions, però pot tocar música rock and roll.",Judge the target text only against the target triples; the English pair is supplied as alignment context.,Medium,One English-calibrated support direction fails.,"{""coverage_pass"": true, ""groundedness_pass"": false, ""minimum_text_groundedness"": 0.21581460535526276, ""minimum_triple_coverage"": 0.3926772475242615, ""target_text_literal_retention"": null}"
+QA32-ES-9b3834a8f7f4,QA3.2,es,Spanish,MeanOfTransportation,train/3triples/MeanOfTransportation.xml::Id90::Id3,"Abarth_1000_GT_Coupé | productionEndYear | 1958
+Abarth_1000_GT_Coupé | wheelbase | 2160.0 (millimetres)
+Abarth_1000_GT_Coupé | bodyStyle | Coupé","Abarth_1000_GT_Coupé | ProducciónFinDeAño | 1958
+Abarth_1000_GT_Coupé | DistanciaEntreEjes | 2160,0_(milímetros)
+Abarth_1000_GT_Coupé | EstiloDeCarrocería | Coupé","The Abarth 1000 GT Coupe has a Coupe body style, a wheelbase of 2160.0 millimetres, and it rolled off the production line in 1958.","El Abarth 1000 GT Coupé tiene carrocería Coupé, una distancia entre ejes de 2160,0 milímetros y salió de la cadena de producción en 1958.","Different English reference from the same RDF entry:
+The Abarth 1000 GT, which ended production in 1958, has a Coupé body style and a wheelbase of 2160 mms.",Medium,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.","{""aligned_reference_advantage"": -0.009926199913024902, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.8580644726753235, ""comparison_reference_similarity"": 0.8679906725883484, ""expansion_ratio"": 1.0, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA31-CA-82e0813bf006,QA3.1,ca,Catalan,WrittenWork,train/3triples/WrittenWork.xml::Id196::Id1,"John_Cowper_Powys | birthPlace | Shirley,_Derbyshire
+John_Cowper_Powys | notableWork | Porius:_A_Romance_of_the_Dark_Ages
+A_Glastonbury_Romance | author | John_Cowper_Powys","John_Cowper_Powys | LlocDeNaixement | Shirley,_Derbyshire
+John_Cowper_Powys | ObraNotable | Porius:_un_romanç_de_l'edat_fosca
+Un_romanç_de_Glastonbury | Autor | John_Cowper_Powys","John Cowper Powys was born in Shirley, Derbyshire. His notable work includes Porius A Romance of the Dark Ages and A Glastonbury Romance.","John Cowper Powys va néixer a Shirley, Derbyshire. La seva obra notable inclou Porius A Romance of the Dark Ages i A Glastonbury Romance.",Assess language identity and substantial English leakage; do not score general fluency or style here.,High,At least one hard language diagnostic is active.,"{""code_switch_detected"": true, ""full_english_copy_detected"": false, ""hard_language_flag"": true, ""predicted_language"": ""ca"", ""target_language_probability"": 0.6383399367332458, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA11-ES-df98634b8855,QA1.1,es,Spanish,MusicalWork,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1200,Rock_music | musicFusionGenre | Noise_rock,rock | GéneroMusicalFusión | noise_rock,Noise rock is a fusion genre of rock music.,El noise rock es un género de fusión de la música rock.,"Expected triples: 1; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: El noise rock es un género de fusión de la música rock.
+El noise rock es un género de fusión basado en la música rock.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA32-ES-85555d3a29fd,QA3.2,es,Spanish,City,train/3triples/City.xml::Id183::Id1,"United_States | capital | Washington,_D.C.
+Abilene,_Texas | isPartOf | Taylor_County,_Texas
+Taylor_County,_Texas | country | United_States","Estados_Unidos | Capital | Washington_D._C.
+Abilene,_Texas | FormaParteDe | Condado_de_Taylor,_Texas
+Condado_de_Taylor,_Texas | País | Estados_Unidos","Abilene is part of Taylor County, Texas in the United States, where the capital is Washington DC.","Abilene es parte del condado de Taylor, Texas en los Estados Unidos, donde la capital es Washington DC.","Different English reference from the same RDF entry:
+The United States ha the capital of Washington DC and is the location of Abilene which is part of Taylor County in Texas.",Low,The target favours its aligned English reference and its length lies within the central language-specific range.,"{""aligned_reference_advantage"": 0.022100746631622314, ""aligned_reference_eligible"": true, ""aligned_reference_similarity"": 0.9829360246658325, ""comparison_reference_similarity"": 0.9608352780342102, ""expansion_ratio"": 1.0588235294117647, ""extreme_advantage"": false, ""extreme_expansion"": false, ""unusual_expansion"": false}"
+QA11-ES-921e1327707b,QA1.1,es,Spanish,Food,train/1triples/Food_allSolutions.xml::Id180,China | language | Standard_Chinese,República_Popular_China | Idioma | mandarín_estándar,Standard Chinese is the language of China.,El chino estándar es la lengua de China.,"Expected triples: 1; English IDs: Id1
+Id2; Target IDs: Id1
+Id2; Target lexicalisations in entry: El chino estándar es la lengua de China.
+El chino estándar es una lengua de China.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA12-CA-c2bfbbe88c6b,QA1.2,ca,Catalan,predicate,deathPlace,,,,,"Observed target forms and counts: {""llocdelamort"": 749}
+Example mappings:
+dev/1triples/Artist_allSolutions.xml::Id16: deathPlace → LlocDeLaMort
+dev/1triples/Astronaut_allSolutions.xml::Id2: deathPlace → LlocDeLaMort
+dev/1triples/Politician_allSolutions.xml::Id13: deathPlace → LlocDeLaMort
+dev/1triples/Politician_allSolutions.xml::Id32: deathPlace → LlocDeLaMort",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 749, ""target_form_count"": 1}"
+QA12-ES-f5d2cda678b5,QA1.2,es,Spanish,entity_or_value,Bangalore,,,,,"Observed target forms and counts: {""bengaluru"": 111}
+Example mappings:
+dev/3triples/University.xml::Id2: Bangalore → Bengaluru
+dev/3triples/University.xml::Id3: Bangalore → Bengaluru
+dev/4triples/University.xml::Id5: Bangalore → Bengaluru
+dev/5triples/University.xml::Id3: Bangalore → Bengaluru",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 111, ""target_form_count"": 1}"
+QA12-ES-8aea21771764,QA1.2,es,Spanish,entity_or_value,Online_Game,,,,,"Observed target forms and counts: {""juego en línea"": 12}
+Example mappings:
+test/rdf-to-text-generation-test-data-with-refs-en.xml::Id306: Online_Game → Juego_en_línea
+test/rdf-to-text-generation-test-data-with-refs-en.xml::Id916: Online_Game → Juego_en_línea
+train/3triples/Company.xml::Id32: Online_Game → Juego_en_línea
+train/3triples/Company.xml::Id38: Online_Game → Juego_en_línea",Low,One normalised target form is observed for the recurring source component.,"{""dominant_mapping_rate"": 1.0, ""mapping_review_signal"": false, ""occurrences"": 12, ""target_form_count"": 1}"
+QA31-ES-905c79c5b85c,QA3.1,es,Spanish,Artist,train/1triples/Artist_allSolutions.xml::Id216::Id2,Canada | officialLanguage | French_language,Canadá | IdiomaOficial | francés,French is Canada's official language.,El francés es la lengua oficial de Canadá.,Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""es"", ""target_language_probability"": 0.6181981563568115, ""valid_target_language"": false, ""wrong_language_detected"": false}"
+QA11-CA-3cd6d577171b,QA1.1,ca,Catalan,Monument,train/3triples/Monument.xml::Id8,"14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States
+14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield
+14th_New_Jersey_Volunteer_Infantry_Monument | established | ""1907-07-11""","14th_New_Jersey_Volunteer_Infantry_Monument | PàginaD'IniciDeL'Usuari | Districtes_històrics_dels_Estats_Units
+14th_New_Jersey_Volunteer_Infantry_Monument | Districte | Monocacy_National_Battlefield
+14th_New_Jersey_Volunteer_Infantry_Monument | Establert | 1907-07-11",The 14th New Jersey Volunteer Infantry Monument which is located in the Monocacy National Battlefield was established on 11 July 1907. It falls within the category of Historic districts in the US.,"El 14è Monument a la Infanteria Voluntària de Nova Jersey, que es troba al Camp de Batalla Nacional de Monocacy, es va establir l'11 de juliol de 1907. Forma part de la categoria de districtes històrics dels EUA.","Expected triples: 3; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: El 14è Monument a la Infanteria Voluntària de Nova Jersey, que es troba al Camp de Batalla Nacional de Monocacy, es va establir l'11 de juliol de 1907. Forma part de la categoria de districtes històrics dels EUA.
+Monocacy National Battlefield és la ubicació del monument de la 14a Infanteria Voluntària de Nova Jersey, que es va establir l'11 de juliol de 1907 i pertany a la categoria de districtes històrics dels EUA.
+El 14è Monument de la Infanteria Voluntària de Nova Jersey va ser establert l'11 de juliol de 1907 i es troba al Monocacy National Battlefield.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA11-ES-3f7757054ac9,QA1.1,es,Spanish,Astronaut,train/5triples/Astronaut.xml::Id2,"Alan_Bean | nationality | United_States
+Alan_Bean | occupation | Test_pilot
+Alan_Bean | almaMater | ""UT Austin, B.S. 1955""
+Alan_Bean | mission | Apollo_12
+Alan_Bean | birthPlace | Wheeler,_Texas","Alan_L._Bean | Nacionalidad | Estados_Unidos
+Alan_L._Bean | Ocupación | piloto_de_pruebas
+Alan_L._Bean | AlmaMáter | UT_Austin,_B.S._1955
+Alan_L._Bean | Misión | Apolo_12
+Alan_L._Bean | LugarDeNacimiento | Wheeler,_Texas","Alan Bean was a US citizen who was born in Wheeler, Texas, He graduated from UT Austin in 1955 with a B.S. degree. He was a test pilot and he served as a crew member of Apollo 12.","Alan Bean era un ciudadano estadounidense nacido en Wheeler, Texas. Se licenció en 1955 por la Universidad de Texas en Austin. Fue piloto de pruebas y miembro de la tripulación del Apolo 12.","Expected triples: 5; English IDs: Id1
+Id2
+Id3; Target IDs: Id1
+Id2
+Id3; Target lexicalisations in entry: Alan Bean era un ciudadano estadounidense nacido en Wheeler, Texas. Se licenció en 1955 por la Universidad de Texas en Austin. Fue piloto de pruebas y miembro de la tripulación del Apolo 12.
+El piloto de pruebas estadounidense Alan Bean, de Wheeler (Texas), se licenció en Ciencias en la Universidad de Texas en Austin en 1955 y pasó a formar parte de la tripulación de la misión de vuelo Apolo 12.
+Alan Bean (nacido en Wheeler, Texas) es un ciudadano estadounidense que formó parte de la tripulación del Apolo 12 tras haber servido como piloto de pruebas. Se licenció en Ciencias por la Universidad de Texas en Austin en 1955.",Low,All five structural conditions pass.,"{""lexicalisation_id_alignment"": true, ""lexicalisation_id_unique"": true, ""target_rdf_well_formed"": true, ""target_text_present"": true, ""target_triple_parity"": true}"
+QA31-CA-2d68c024163f,QA3.1,ca,Catalan,WrittenWork,train/2triples/WrittenWork.xml::Id68::Id1,"A_Glastonbury_Romance | mediaType | Hardcover
+A_Glastonbury_Romance | oclcNumber | 76798317","Un_romanç_de_Glastonbury | TipusDeMitjans | enquadernació_cartoné
+Un_romanç_de_Glastonbury | NúmeroOclc | 76798317","""A Glastonbury Romance "" can be found in hardcover and as the OCLC number 76798317.","""A Glastonbury Romance"" es pot trobar en tapa dura i com el número OCLC 76798317.",Assess language identity and substantial English leakage; do not score general fluency or style here.,Medium,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.","{""code_switch_detected"": false, ""full_english_copy_detected"": false, ""hard_language_flag"": false, ""predicted_language"": ""ca"", ""target_language_probability"": 0.6444318890571594, ""valid_target_language"": false, ""wrong_language_detected"": false}"

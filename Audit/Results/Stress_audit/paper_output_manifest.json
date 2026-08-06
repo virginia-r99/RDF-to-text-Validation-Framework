@@ -1,0 +1,44 @@
+{
+  "metric_core_compatibility": "audit-text-aligned-2.7",
+  "metric_core_sha256": "d41a631b7be3fba492dfd90317ca7a96d9a24ed93dd52478b7243ed36746004c",
+  "recommended_main_paper_figures": [
+    "fig_overall_detection_heatmap.pdf",
+    "fig_qa2_effect_sizes_forest.pdf",
+    "fig_qa2_omission_severity.pdf",
+    "fig_qa2_addition_severity.pdf",
+    "fig_qa3_control_selectivity_heatmap.pdf"
+  ],
+  "recommended_main_paper_tables": [
+    "table_overall_audit_summary.tex",
+    "table_qa2_corruption_results.tex",
+    "table_qa3_control_selectivity.tex"
+  ],
+  "all_pdf_figures": [
+    "fig_overall_detection_heatmap.pdf",
+    "fig_qa1_consistency_dominance.pdf",
+    "fig_qa1_detection_heatmap.pdf",
+    "fig_qa1_structural_detection.pdf",
+    "fig_qa2_addition_severity.pdf",
+    "fig_qa2_auroc_heatmap.pdf",
+    "fig_qa2_benign_aligned_reference.pdf",
+    "fig_qa2_detection_heatmap.pdf",
+    "fig_qa2_effect_sizes_forest.pdf",
+    "fig_qa2_expected_direction_heatmap.pdf",
+    "fig_qa2_hist_qa2_literal_both.pdf",
+    "fig_qa2_hist_qa2_predicate_substitution_triple.pdf",
+    "fig_qa2_hist_qa2_unsupported_addition_plausible.pdf",
+    "fig_qa2_hist_qa2_unsupported_addition_unrelated.pdf",
+    "fig_qa2_hist_qa2_wrong_record_text.pdf",
+    "fig_qa2_omission_severity.pdf",
+    "fig_qa3_control_selectivity_heatmap.pdf",
+    "fig_qa3_corruption_detection.pdf",
+    "fig_qa3_detection_heatmap.pdf",
+    "fig_qa3_language_probability_catalan.pdf",
+    "fig_qa3_language_probability_spanish.pdf"
+  ],
+  "all_latex_tables": [
+    "table_overall_audit_summary.tex",
+    "table_qa2_corruption_results.tex",
+    "table_qa3_control_selectivity.tex"
+  ]
+}

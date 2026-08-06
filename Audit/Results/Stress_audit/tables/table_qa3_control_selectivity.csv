@@ -1,0 +1,5 @@
+Control,language,Language,Variants,Hard false-positive rate,Valid target-language rate,Wrong-language rate,Exact-copy rate,Code-switch rate
+Benign variation,ca,Catalan,400,0.0,0.935,0.0,0.0,0.0
+Benign variation,es,Spanish,400,0.0,0.9025,0.0,0.0,0.0
+Clean,ca,Catalan,1000,0.0,0.933,0.0,0.0,0.0
+Clean,es,Spanish,1000,0.0,0.92,0.0,0.0,0.0

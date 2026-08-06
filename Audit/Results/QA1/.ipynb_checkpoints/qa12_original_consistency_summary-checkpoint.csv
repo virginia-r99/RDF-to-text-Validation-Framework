@@ -1,0 +1,5 @@
+language,language_label,component_type,recurring_source_items,mapping_observations,weighted_dominant_mapping_rate,mapping_review_rate,items_selected_for_review
+ca,Catalan,entity_or_value,3458,97545,1.0,0.0,0
+ca,Catalan,predicate,397,48831,1.0,0.0,0
+es,Spanish,entity_or_value,3458,97545,0.9999282382490132,0.0014459224985540775,5
+es,Spanish,predicate,397,48831,1.0,0.0,0

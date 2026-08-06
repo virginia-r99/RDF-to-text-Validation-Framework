@@ -1,0 +1,9 @@
+Audit dimension,Language,Controlled variants,Corruption types,Weighted detection rate,Minimum detection rate
+QA1.1,Catalan,1700,8,1.0,1.0
+QA1.1,Spanish,1700,8,1.0,1.0
+QA1.2,Catalan,758,1,1.0,1.0
+QA1.2,Spanish,769,1,1.0,1.0
+QA2,Catalan,2985,11,0.8686767169179229,0.4133333333333333
+QA2,Spanish,2982,11,0.8688799463447351,0.4666666666666667
+QA3.1,Catalan,600,2,0.8716666666666667,0.7433333333333333
+QA3.1,Spanish,600,2,0.88,0.76

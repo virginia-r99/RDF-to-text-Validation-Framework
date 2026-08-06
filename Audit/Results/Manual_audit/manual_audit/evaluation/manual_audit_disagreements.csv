@@ -1,0 +1,43 @@
+﻿case_id,subqa,language_label,automatic_risk,manual_risk,automatic_basis,manual_notes,record_or_component
+QA31-ES-20976c64ca85,QA3.1,Spanish,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/1triples/CelestialBody_allSolutions.xml::Id62::Id3
+QA32-ES-2df23e657c27,QA3.2,Spanish,High,Low,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1152::Id2
+QA31-ES-54811d2ddf7d,QA3.1,Spanish,High,Low,At least one hard language diagnostic is active.,,dev/5triples/WrittenWork.xml::Id3::Id3
+QA31-CA-d9f426adbebb,QA3.1,Catalan,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/1triples/Artist_allSolutions.xml::Id175::Id1
+QA32-CA-fdb8a299ed33,QA3.2,Catalan,Medium,Low,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.",,train/1triples/Airport_allSolutions.xml::Id251::Id1
+QA21-CA-d078b5059a28,QA2.1,Catalan,Medium,Low,at least one semantic score is in the lowest 10%.,,train/4triples/Food.xml::Id37::Id2
+QA31-CA-02a164be5c49,QA3.1,Catalan,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/2triples/Athlete.xml::Id98::Id2
+QA31-ES-b28c82e49848,QA3.1,Spanish,High,Low,At least one hard language diagnostic is active.,,train/4triples/WrittenWork.xml::Id91::Id3
+QA22-CA-f6659116e219,QA2.2,Catalan,Medium,Low,One English-calibrated support direction fails.,,train/5triples/SportsTeam.xml::Id39::Id2
+QA22-ES-461840d184d1,QA2.2,Spanish,High,Medium,both English-calibrated support directions fail.,Wording,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id791::Id1
+QA12-ES-567e8ba72a2f,QA1.2,Spanish,High,Medium,Multiple target forms are observed and the dominant form accounts for less than 90% of mappings.,Scientific name,Squid
+QA22-CA-30b349f46c72,QA2.2,Catalan,High,Low,both English-calibrated support directions fail.,,dev/3triples/Food.xml::Id34::Id1
+QA22-CA-19f89486e0d8,QA2.2,Catalan,Medium,High,One English-calibrated support direction fails.,Not same abreviation or translation of entity name,train/2triples/WrittenWork.xml::Id142::Id3
+QA21-ES-9947dd19f128,QA2.1,Spanish,Medium,Low,at least one semantic score is in the lowest 10%.,,train/2triples/WrittenWork.xml::Id22::Id1
+QA22-ES-81a8614089d8,QA2.2,Spanish,High,Low,both English-calibrated support directions fail.,,train/2triples/Astronaut.xml::Id39::Id2
+QA22-CA-a43f235e3b5c,QA2.2,Catalan,Low,Medium,Coverage and groundedness pass; no target literal failure is observed.,"Non translated name in text (not wrong per se, just untranslated)",train/3triples/WrittenWork.xml::Id208::Id1
+QA21-CA-43de0c41c330,QA2.1,Catalan,High,Low,a semantic score is in the lowest 1%.,,train/4triples/University.xml::Id63::Id3
+QA21-ES-62579ea751ce,QA2.1,Spanish,Medium,Low,at least one semantic score is in the lowest 10%.,,train/1triples/Airport_allSolutions.xml::Id85::Id3
+QA31-ES-06f830bd3f22,QA3.1,Spanish,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/1triples/Artist_allSolutions.xml::Id12::Id1
+QA32-ES-d88fab1a3cff,QA3.2,Spanish,High,Medium,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,dev/2triples/Politician.xml::Id15::Id2
+QA32-CA-693d127b4265,QA3.2,Catalan,High,Low,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id670::Id1
+QA22-ES-eb42aa8c1ce9,QA2.2,Spanish,Medium,High,One English-calibrated support direction fails.,Unaligned triples and text,dev/3triples/MeanOfTransportation.xml::Id14::Id1
+QA21-CA-a981fc247848,QA2.1,Catalan,High,Low,source literal preservation is below 1.,,train/4triples/CelestialBody.xml::Id81::Id2
+QA12-ES-789ebc58fcba,QA1.2,Spanish,Medium,High,"Multiple target forms are observed, but one form remains strongly dominant.",Wrong translation,Central_Denmark_Region
+QA22-ES-707f5334a615,QA2.2,Spanish,High,Medium,target literal retention is below 1.,Wording,train/3triples/SportsTeam.xml::Id10::Id2
+QA21-CA-1880373b0151,QA2.1,Catalan,High,Low,a semantic score is in the lowest 1%; at least two semantic scores are in the lowest 5%.,,train/1triples/Food_allSolutions.xml::Id25::Id2
+QA21-CA-14870e9d8c70,QA2.1,Catalan,Medium,Low,at least one semantic score is in the lowest 10%.,,train/2triples/Food.xml::Id62::Id2
+QA32-CA-26637768e9d6,QA3.2,Catalan,High,Low,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,dev/1triples/MeanOfTransportation_allSolutions.xml::Id21::Id2
+QA31-CA-d5c7e68dbb17,QA3.1,Catalan,High,Low,At least one hard language diagnostic is active.,,train/1triples/WrittenWork_allSolutions.xml::Id187::Id1
+QA32-CA-f9027daa4751,QA3.2,Catalan,Medium,Low,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.",,train/1triples/Building_allSolutions.xml::Id163::Id2
+QA21-ES-47231211c8ac,QA2.1,Spanish,Medium,Low,at least one semantic score is in the lowest 10%.,,dev/1triples/City_allSolutions.xml::Id9::Id2
+QA31-CA-34aa9c807c11,QA3.1,Catalan,High,Low,At least one hard language diagnostic is active.,,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id169::Id2
+QA31-ES-c662d1890bbf,QA3.1,Spanish,High,Low,At least one hard language diagnostic is active.,,dev/4triples/Artist.xml::Id22::Id3
+QA32-CA-0479eb54992e,QA3.2,Catalan,Medium,Low,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.",,train/1triples/Building_allSolutions.xml::Id117::Id1
+QA22-CA-fe32c5fbd02a,QA2.2,Catalan,High,Low,both English-calibrated support directions fail.,,train/1triples/Athlete_allSolutions.xml::Id13::Id1
+QA32-CA-7e13d56fda5a,QA3.2,Catalan,High,Low,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,train/4triples/University.xml::Id62::Id1
+QA32-ES-8c94a4837a54,QA3.2,Spanish,High,Low,"The aligned-reference advantage is in the extreme lower tail, or a non-positive advantage coincides with extreme length variation.",,train/1triples/Company_allSolutions.xml::Id41::Id1
+QA21-ES-0398e86d7052,QA2.1,Spanish,High,Medium,a semantic score is in the lowest 1%.,Wrong structure,test/rdf-to-text-generation-test-data-with-refs-en.xml::Id1761::Id2
+QA32-ES-9b3834a8f7f4,QA3.2,Spanish,Medium,Low,"The aligned-reference advantage is non-positive/unavailable, or the expansion ratio is outside the central 90% range.",,train/3triples/MeanOfTransportation.xml::Id90::Id3
+QA31-CA-82e0813bf006,QA3.1,Catalan,High,Low,At least one hard language diagnostic is active.,,train/3triples/WrittenWork.xml::Id196::Id1
+QA31-ES-905c79c5b85c,QA3.1,Spanish,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/1triples/Artist_allSolutions.xml::Id216::Id2
+QA31-CA-2d68c024163f,QA3.1,Catalan,Medium,Low,"The expected language does not reach the confidence-based valid-language decision, but no hard flag is active.",,train/2triples/WrittenWork.xml::Id68::Id1
