@@ -1,9 +1,9 @@
-"""Shared metrics for the original-resource audit and AuditStress runner.
+"""Shared metrics for the original-resource framework and ControlledStress runner.
 
 The purpose of this module is to prevent metric drift. The corrected original
-audit notebooks and the aligned AuditStress runner import the same functions.
+framework notebooks and the aligned ControlledStress runner import the same functions.
 
-Compatibility version: audit-text-aligned-2.7
+Compatibility version: controlled-text-aligned-2.7
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ try:
 except ImportError:
     joblib = None
 
-CORE_COMPATIBILITY = "audit-text-aligned-2.7"
+CORE_COMPATIBILITY = "controlled-text-aligned-2.7"
 RANDOM_SEED = 42
 LANG_LABELS = {"en": "English", "es": "Spanish", "ca": "Catalan"}
 
@@ -68,14 +68,6 @@ def normalize_label(value: object) -> str:
 # ---------------------------------------------------------------------------
 # QA1.2 — recurring-component consistency
 # ---------------------------------------------------------------------------
-#
-# This section implements the three indicators reported in
-# Table~\ref{tab:audit-framework-qa12}:
-#
-#   1. D_{ell,r}(x): dominant mapping rate;
-#   2. D_{w,ell,r}: weighted dominant mapping rate; and
-#   3. M_{ell,r}(x): derived mapping-review flag.
-#
 # Evaluation unit
 # ---------------
 # A component-level mapping observation is defined by:
@@ -482,7 +474,7 @@ def qa12_summarize_mapping_profiles(
     Default reporting strata
     -------------------------
     The table defines one aggregate for every target-language/component-class
-    pair ``(ell, r)``. AuditStress may add an extra reporting stratum, such as
+    pair ``(ell, r)``. ControlledStress may add an extra reporting stratum, such as
     ``group_kind``, without changing the metric.
 
     Table correspondence
@@ -795,7 +787,7 @@ def serialize_triple(triple: str) -> str:
 
 
 def serialize_triple_set(triples: list[str]) -> str:
-    # This deliberately matches the final AuditStress runner.
+    # This deliberately matches the final ControlledStress runner.
     return " ".join(serialize_triple(triple) for triple in triples)
 
 
@@ -833,7 +825,7 @@ class SemanticScorer:
                 from sentence_transformers import SentenceTransformer
             except ImportError as exc:
                 raise ImportError(
-                    "Install sentence-transformers to run the final QA2 audit."
+                    "Install sentence-transformers to run the final QA2 tests."
                 ) from exc
             self.model = SentenceTransformer(model_name)
         elif backend == "tfidf":
@@ -1656,7 +1648,7 @@ def qa22_relative_literal_retention_summary(
 
         rows.append({
             **key_values,
-            "audited_instances": int(len(group)),
+            "tested_instances": int(len(group)),
             "english_eligible_instances": denominator,
             "target_successes_among_english_eligible": numerator,
             "relative_literal_retention": (
@@ -2312,14 +2304,6 @@ def predict_language(model, texts: pd.Series):
 # QA3.1 — target-language validity and source-language leakage
 # ---------------------------------------------------------------------------
 #
-# Table~\ref{tab:audit-framework-qa31} defines:
-#
-#   P_ell(e): probability assigned to the expected target language;
-#   V_ell(e): valid-language indicator;
-#   W_ell(e): wrong-language flag;
-#   C_ell(e): exact English-copy flag; and
-#   CS_ell(e): English code-switch flag.
-#
 # The code-switch implementation uses overlapping 10-token windows with a
 # stride of 8 and retains windows containing at least 6 tokens. A target text
 # with no eligible window cannot satisfy the code-switch condition.
@@ -2684,19 +2668,12 @@ def legacy_internal_chrf(
     return float(np.mean(scores))
 
 
-# Backward-compatible name only. This measure is not part of the v2 core audit.
+# Backward-compatible name only. This measure is not part of the v2 core framework.
 internal_chrf = legacy_internal_chrf
 
 # ---------------------------------------------------------------------------
 # QA3.2 — target-language variation and aligned-reference advantage
 # ---------------------------------------------------------------------------
-#
-# Table~\ref{tab:audit-framework-qa32} defines:
-#
-#   ER_ell(e): target-token count divided by the aligned English-token count;
-#   Delta_align,ell(e,a,b): similarity to the aligned English lexicalisation
-#   minus similarity to another English lexicalisation from the same entry.
-#
 # Tokenisation is the whitespace tokenisation obtained after
 # ``normalize_space``. Aligned-reference advantage is defined only when all
 # three texts are non-empty, the target and aligned English references share
