@@ -1,3 +1,0 @@
-language,language_label,mean_expansion_ratio,median_expansion_ratio,expansion_ratio_sd,aligned_reference_eligible,mean_aligned_reference_advantage,positive_aligned_reference_advantage_rate
-ca,Catalan,1.0644168982038251,1.0526315789473684,0.1333785117992165,44243,0.038810119698213505,0.9025608570847365
-es,Spanish,1.0610634790795221,1.0416666666666667,0.14597830446102292,44243,0.03752960559966104,0.8986054291074295
